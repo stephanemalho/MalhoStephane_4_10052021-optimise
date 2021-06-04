@@ -282,7 +282,9 @@ a:hover {
     padding-right: 0;
     padding-left: 0;
 }
-
+#bloc-1-hero {
+    height: 400px;
+}
 #bloc-1-hero h1 {
     font-size: 32px;
 }
@@ -508,6 +510,7 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
+    display: flex;
 }
 
 .scrollToTop {
@@ -682,7 +685,12 @@ p {
 
 .tight-width-whitespace {
     max-width: 600px;
-    margin: auto auto auto auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
 }
 
 .h1 {
@@ -824,7 +832,16 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
 }
-
+select {
+    display: flex;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+option {
+    font-size: 1rem;
+    background-color: #FFF;
+}
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
