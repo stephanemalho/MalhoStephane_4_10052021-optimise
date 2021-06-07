@@ -7,14 +7,14 @@
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
     <link rel="shortcut icon" type="image/png" href="favicon.jpg" />
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css" />
     <link rel="stylesheet" type="text/css" href="./css/et-line.min.css" />
 
-    <script src="./js/jquery-2.1.0.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/blocs.min.js"></script>
+    <script src="./js/jquery-2.1.0.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/blocs.js"></script>
     <script src="./js/jqBootstrapValidation.js"></script>
     <script src="./js/formHandler.js"></script>
     <title>Formulaire - La chouette agence</title>
@@ -31,7 +31,7 @@
     <!-- Analytics END -->
   </head>
   <body>
-    <header class="container bloc-sm">
+    <header class="container bcg-white fixed-header">
       <nav class="navbar row">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html"
@@ -48,8 +48,9 @@
             data-target=".navbar-1"
           >
             <!-- <span class="sr-only">Toggle navigation</span -->
-            ><span class="icon-bar"></span><span class="icon-bar"></span
-            ><span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </button>
         </div>
         <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
@@ -57,110 +58,112 @@
             <li>
               <a href="index.html">Accueil</a>
             </li>
-            <li>
-              <a href="./contact.html">Contact &gt;</a>
-            </li>
           </ul>
         </div>
       </nav>
     </header>
     <!-- bloc-0 END -->
-
-    <!-- bloc-6 -->
-    <section
-      class="
-        bloc
-        bg-dots-bg bg-repeat
-        bgc-atomic-tangerine
-        d-bloc
-        bloc-bg-texture
-        texture-paper
-      "
-      id="bloc-6"
-    >
-      <h1 class="text-center hero-bloc-text tc-white">
-        Remplissez votre formulaire
-      </h1>
-
-      <div class="container bloc-lg row col-sm-12">
-        <p class="text-center mg-lg tc-white tight-width-whitespace">
-          Nous sommes ravis que vous souhaitiez collaborer avec notre agence.
-          Parlez-nous de votre projet en complétant le formulaire ci-dessous.
-        </p>
-      </div>
-    </section>
-    <!-- bloc-6 END -->
-
-    <!-- bloc-7 -->
-    <div
-      class="bloc bgc-white l-bloc container bloc-lg row col-sm-6"
-      id="bloc-7"
-    >
-      <form
-        id="form_1"
-        novalidate
-        success-msg="Votre message à bien été envoyé."
-        fail-msg="Désolé, il semble que notre serveur de messagerie ne réponde pas, désolé pour le désagrément!"
+    <main>
+      <!-- bloc-6 -->
+      <label for="name">
+      <section
+        class="
+          bloc
+          bgc-atomic-tangerine
+          d-bloc 
+          "
+        id="bloc-6"
       >
-        <div class="form-group">
-          <label for="name"> Nom </label>
-          <input id="name" class="form-control" required />
+        <h1 class="text-center hero-bloc-text tc-white">
+          Remplissez votre formulaire
+        </h1>
+
+        <div class="container bloc-lg row col-sm-12">
+          <p class="text-center mg-lg tc-white tight-width-whitespace">
+            Nous sommes ravis que vous souhaitiez collaborer avec notre agence.
+            Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+          </p>
         </div>
-        <div class="form-group">
-          <label for="email"> Adresse email </label>
-          <input id="email" class="form-control" type="email" required />
-        </div>
-        <div class="form-group">
-          <label for="input_504"> Comment nous avez-vous connu ? </label>
-          <select name="form-group" id="input_504">
-            <option value="">--Cochez s&rsquo;il vous plait--</option>
-            <option value="web">Sur le web</option>
-            <option value="parrainage">par parrainage</option>
-            <option value="pub">campagne publicitaire</option>
-            <!-- <input
+      
+      </section>
+      </label>
+      <!-- bloc-6 END -->
+
+      <!-- bloc-7 -->
+      <div
+        class="bgc-white l-bloc container bloc-lg row col-sm-6"
+        id="bloc-7"
+      >
+        <form
+          id="form_1"
+          novalidate
+          success-msg="Votre message à bien été envoyé."
+          fail-msg="Désolé, il semble que notre serveur de messagerie ne réponde pas, désolé pour le désagrément!"
+        >
+          <div class="form-group">
+            <label for="name"> Nom </label>
+            <input id="name" class="form-control" required/>
+          </div>
+          <div class="form-group">
+            <label for="email"> Adresse email </label>
+            <input id="email" class="form-control" type="email" required/>
+          </div>
+          <div class="form-group">
+            <label for="input_504"> Comment nous avez-vous connu ? </label>
+            <select name="form-group" id="input_504">
+              <option value="" disabled>Selectionnez une raison</option>
+              <option value="web">Sur le web</option>
+              <option value="parrainage">par parrainage</option>
+              <option value="pub">campagne publicitaire</option>
+              <option value="autre">autre</option>
+              <!-- <input
                   class="form-control"
                   type="email"
                   required
                   id="input_504"
                 /> -->
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="message">
-            Brief de votre projet:</label
-          ><textarea
-            id="message"
-            class="form-control"
-            placeholder="Ajoutez autant de détails que nécessaire"
-            rows="4"
-            cols="50"
-            required
-          ></textarea>
-        </div>
-        <button
-          class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
-          type="submit"
-        >
-          Envoyer
-        </button>
-      </form>
-    </div>
-    <div class="bloc col-sm-6">
-      <p>
-        contact@lachouetteagence.com, 2 place Sathonay 69001 Lyon, Ouvert de 9h
-        à 18h, du lundi au vendredi
-      </p>
-    </div>
-    <!-- bloc-7 END -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message"> Brief de votre projet:</label
+            ><textarea
+              id="message"
+              class="form-control"
+              placeholder="Ajoutez autant de détails que nécessaire"
+              rows="4"
+              cols="50"
+              required
+            ></textarea>
+          </div>
+          <button
+            class="
+              bloc-button
+              btn btn-lg btn-block
+              cta-hero
+              btn-atomic-tangerine
+            "
+            type="submit"
+          >
+            Envoyer
+          </button>
+        </form>
+      </div>
+      <div class="bloc col-sm-6">
+        <p>
+          contact@lachouetteagence.com, 2 place Sathonay 69001 Lyon, Ouvert de
+          9h à 18h, du lundi au vendredi
+        </p>
+      </div>
+      <!-- bloc-7 END -->
 
-    <!-- ScrollToTop Button -->
-    <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"
-      ><span class="fa fa-chevron-up"></span
-    ></a>
-    <!-- ScrollToTop Button END-->
-
+      <!-- ScrollToTop Button -->
+      <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"
+        ><span class="fa fa-chevron-up"></span
+      ></a>
+      <!-- ScrollToTop Button END-->
+    </main>
     <!-- Footer - bloc-8 -->
-    <footer class="bloc bgc-atomic-tangerine d-bloc col-sm-12 row" id="bloc-8">
+    <footer class="form-footer bgc-atomic-tangerine d-bloc col-sm-12 row" id="bloc-8">
       <div class="container bloc-sm">
         <p class="text-center white">
           La chouette agence - Agence web basée à Lyon.
@@ -169,4 +172,5 @@
     </footer>
     <!-- Footer - bloc-8 END -->
   </body>
+  
 </html>

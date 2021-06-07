@@ -1,4 +1,4 @@
-/*!
+    /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -1384,16 +1384,17 @@ th {
 }
 
 html {
-    font-size: 10px;
+    font-size: 62.5%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 1.42857143;
-    color: #333;
-    background-color: #fff
+    color: black;
+    background-color: #fff;
+    box-sizing: border-box;
 }
 
 button,
@@ -1437,7 +1438,9 @@ img {
 .thumbnail>img {
     display: block;
     max-width: 100%;
-    height: auto
+    height: auto;
+    width: 80vw;
+    margin: auto
 }
 
 .img-rounded {
@@ -1857,10 +1860,10 @@ abbr[title] {
 }
 
 blockquote {
-    padding: 10px 20px;
-    margin: 0 0 20px;
-    font-size: 17.5px;
-    border-left: 5px solid #eee
+    padding: 0 20px;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    border-left: 5px solid orange
 }
 
 blockquote ol:last-child,
@@ -3156,10 +3159,9 @@ output {
 }
 
 .form-control:focus {
-    border-color: #66afe9;
+    border-color: orange;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
+    border: 2px solid orange;
 }
 
 .form-control::-moz-placeholder {
@@ -5251,8 +5253,13 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .navbar-nav>li>a {
     padding-top: 10px;
     padding-bottom: 10px;
-    line-height: 20px
+    line-height: 20px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 30px;
 }
+
 
 @media (max-width:767px) {
     .navbar-nav .open .dropdown-menu {
@@ -7682,7 +7689,7 @@ button.close {
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #000\9;
+    background-color: #000;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #fff;
     border-radius: 10px
@@ -8074,4 +8081,4 @@ button.close {
     .hidden-print {
         display: none !important
     }
-}
+}  
