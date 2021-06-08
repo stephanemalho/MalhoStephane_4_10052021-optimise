@@ -1988,23 +1988,23 @@ pre code {
     margin-left: auto
 }
 
-@media (min-width:768px) {
+/* @media (min-width:768px) {
     .container {
         width: 750px
     }
-}
+} */
 
-@media (min-width:992px) {
+/* @media (min-width:992px) {
     .container {
         width: 970px
     }
-}
+} */
 
-@media (min-width:1200px) {
+/* @media (min-width:1200px) {
     .container {
         width: 1170px
     }
-}
+} */
 
 .container-fluid {
     padding-right: 15px;
@@ -3093,7 +3093,8 @@ label {
     display: inline-block;
     max-width: 100%;
     margin-bottom: 5px;
-    font-weight: 700
+    font-weight: 700;
+    font-size: 1.7rem
 }
 
 input[type=search] {
@@ -5251,10 +5252,10 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 
 .navbar-nav>li>a {
-    padding-top: 10px;
+    /* padding-top: 10px;
     padding-bottom: 10px;
-    line-height: 20px;
-    color: white;
+    line-height: 20px; */
+    color: black;
     font-size: 2rem;
     font-weight: bold;
     margin-right: 30px;
@@ -5285,7 +5286,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     }
 }
 
-@media (min-width:768px) {
+/* @media (min-width:768px) {
     .navbar-nav {
         float: left;
         margin: 0
@@ -5297,7 +5298,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
         padding-top: 15px;
         padding-bottom: 15px
     }
-}
+} */
 
 .navbar-form {
     padding: 10px 15px;
