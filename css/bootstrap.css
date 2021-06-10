@@ -1407,13 +1407,13 @@ textarea {
 }
 
 a {
-    color: #337ab7;
+    color: #000;
     text-decoration: none
 }
 
 a:focus,
 a:hover {
-    color: #23527c;
+    color: rgb(249, 118, 57);
     text-decoration: underline
 }
 
@@ -1694,7 +1694,7 @@ mark {
 
 a.text-primary:focus,
 a.text-primary:hover {
-    color: #286090
+    color: rgb(249, 118, 57)
 }
 
 .text-success {
@@ -1707,7 +1707,7 @@ a.text-success:hover {
 }
 
 .text-info {
-    color: #31708f
+    color: rgb(249, 118, 57)
 }
 
 a.text-info:focus,
@@ -1735,12 +1735,12 @@ a.text-danger:hover {
 
 .bg-primary {
     color: #fff;
-    background-color: #337ab7
+    background-color: rgb(249, 118, 57)
 }
 
 a.bg-primary:focus,
 a.bg-primary:hover {
-    background-color: #286090
+    background-color: rgb(249, 118, 57)
 }
 
 .bg-success {
@@ -1861,9 +1861,9 @@ abbr[title] {
 
 blockquote {
     padding: 0 20px;
-    margin-top: 40px;
+    margin: 40px 0;
     font-size: 1.5rem;
-    border-left: 5px solid orange
+    border-left: 5px solid rgb(249, 118, 57)
 }
 
 blockquote ol:last-child,
@@ -3160,9 +3160,9 @@ output {
 }
 
 .form-control:focus {
-    border-color: orange;
+    border-color: rgb(249, 118, 57);
     outline: 0;
-    border: 2px solid orange;
+    border: 2px solid rgb(249, 118, 57)
 }
 
 .form-control::-moz-placeholder {
