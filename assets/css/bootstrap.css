@@ -1418,9 +1418,9 @@ a:hover {
 }
 
 a:focus {
-    outline: thin dotted;
+    outline: 2px solid black;
     outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px
+    outline-offset: 2px
 }
 
 figure {
@@ -1712,7 +1712,7 @@ a.text-success:hover {
 
 a.text-info:focus,
 a.text-info:hover {
-    color: #245269
+    color: rgb(249, 118, 57)
 }
 
 .text-warning {
@@ -1851,7 +1851,7 @@ dd {
 abbr[data-original-title],
 abbr[title] {
     cursor: help;
-    border-bottom: 1px dotted #777
+    border-bottom: 1px dotted #000
 }
 
 .initialism {
@@ -3127,9 +3127,9 @@ select[size] {
 input[type=file]:focus,
 input[type=checkbox]:focus,
 input[type=radio]:focus {
-    outline: thin dotted;
+    outline: 2px dotted ;
     outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px
+    outline-offset: 2px
 }
 
 output {
@@ -3166,16 +3166,16 @@ output {
 }
 
 .form-control::-moz-placeholder {
-    color: #999;
+    color: #555;
     opacity: 1
 }
 
-/* .form-control:-ms-input-placeholder {
+/*.form-control:-ms-input-placeholder {
     color: #999
 } */
 
 .form-control::-webkit-input-placeholder {
-    color: #999
+    color: #555
 }
 
 .form-control[disabled],
@@ -3684,9 +3684,9 @@ textarea.input-lg {
 .btn:active.focus,
 .btn:active:focus,
 .btn:focus {
-    outline: thin dotted;
+    outline: 2px solid orangered;
     outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px
+    outline-offset: 2px
 }
 
 .btn.focus,
@@ -3703,12 +3703,15 @@ textarea.input-lg {
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
 }
-
+.close-lightbox {
+    border-radius: 50%;
+    background-color: rgb(249, 118, 57);
+    color: white;
+}
 .btn.disabled,
 .btn[disabled],
 fieldset[disabled] .btn {
     cursor: not-allowed;
-    /* filter: alpha(opacity=65); */
     -webkit-box-shadow: none;
     box-shadow: none;
     opacity: .65
@@ -3808,16 +3811,16 @@ fieldset[disabled] .btn-default:hover {
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #286090;
-    border-color: #204d74
+    background-color:rgb(249, 118, 57);
+    border-color: rgb(249, 118, 57)
 }
 
 .btn-primary.active,
 .btn-primary:active,
 .open>.dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: #286090;
-    border-color: #204d74
+    background-color: rgb(249, 118, 57);
+    border-color: rgb(249, 118, 57)
 }
 
 .btn-primary.active.focus,
@@ -3830,8 +3833,8 @@ fieldset[disabled] .btn-default:hover {
 .open>.dropdown-toggle.btn-primary:focus,
 .open>.dropdown-toggle.btn-primary:hover {
     color: #fff;
-    background-color: #204d74;
-    border-color: #122b40
+    background-color: rgb(249, 118, 57);
+    border-color: rgb(249, 118, 57)
 }
 
 .btn-primary.active,
@@ -3858,12 +3861,12 @@ fieldset[disabled] .btn-primary.focus,
 fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary:hover {
-    background-color: #337ab7;
-    border-color: #2e6da4
+    background-color: rgb(249, 118, 57);
+    border-color: rgb(249, 118, 57)
 }
 
 .btn-primary .badge {
-    color: #337ab7;
+    color: rgb(249, 118, 57);
     background-color: #fff
 }
 
@@ -3950,22 +3953,22 @@ fieldset[disabled] .btn-success:hover {
 .btn-info.focus,
 .btn-info:focus {
     color: #fff;
-    background-color: #31b0d5;
-    border-color: #1b6d85
+    background-color: rgb(249, 118, 57);
+    border-color: rgb(249, 118, 57)
 }
 
 .btn-info:hover {
     color: #fff;
-    background-color: #31b0d5;
-    border-color: #269abc
+    background-color: rgb(249, 118, 57);
+    border-color: rgb(249, 118, 57)
 }
 
 .btn-info.active,
 .btn-info:active,
 .open>.dropdown-toggle.btn-info {
     color: #fff;
-    background-color: #31b0d5;
-    border-color: #269abc
+    background-color: rgb(249, 118, 57);
+    border-color: rgb(249, 118, 57)
 }
 
 .btn-info.active.focus,
@@ -3978,8 +3981,8 @@ fieldset[disabled] .btn-success:hover {
 .open>.dropdown-toggle.btn-info:focus,
 .open>.dropdown-toggle.btn-info:hover {
     color: #fff;
-    background-color: #269abc;
-    border-color: #1b6d85
+    background-color: rgb(249, 118, 57);
+    border-color: rgb(249, 118, 57)
 }
 
 .btn-info.active,
@@ -4006,8 +4009,8 @@ fieldset[disabled] .btn-info.focus,
 fieldset[disabled] .btn-info:active,
 fieldset[disabled] .btn-info:focus,
 fieldset[disabled] .btn-info:hover {
-    background-color: #5bc0de;
-    border-color: #46b8da
+    background-color: rgb(249, 118, 57);
+    border-color: rgb(249, 118, 57)
 }
 
 .btn-info .badge {
@@ -4360,7 +4363,7 @@ tbody.collapse.in {
 .dropdown-menu>.active>a:hover {
     color: #fff;
     text-decoration: none;
-    background-color: #337ab7;
+    background-color: rgb(249, 118, 57);
     outline: 0
 }
 
@@ -4872,7 +4875,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .nav .open>a:focus,
 .nav .open>a:hover {
     background-color: #eee;
-    border-color: #337ab7
+    border-color: rgb(249, 118, 57)
 }
 
 .nav .nav-divider {
@@ -5754,8 +5757,8 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
     z-index: 2;
     color: #fff;
     cursor: default;
-    background-color: #337ab7;
-    border-color: #337ab7
+    background-color: rgb(249, 118, 57);
+    border-color: rgb(249, 118, 57)
 }
 
 .pagination>.disabled>a,
@@ -6061,7 +6064,7 @@ a.badge:hover {
 a.thumbnail.active,
 a.thumbnail:focus,
 a.thumbnail:hover {
-    border-color: #337ab7
+    border-color: rgb(249, 118, 57)
 }
 
 .thumbnail .caption {

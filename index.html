@@ -6,11 +6,20 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
-    <link rel="shortcut icon" type="image/png" href="./img/logo-title.jpg" />
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="./css/et-line.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./assets/img/logo-title.jpg"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/font-awesome.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/et-line.css" />
 
     <title>
       La chouette agence - page d&rsquo;acceuil améliore le webdesign des
@@ -49,10 +58,11 @@
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">
             <img
-              src="img/main-logo-min.png"
+              src="./assets/img/main-logo-min.png"
               alt="logo principal de la chouette agence représentant un hibou"
               height="40"
           /></a>
+
           <button
             id="nav-toggle"
             type="button"
@@ -60,21 +70,23 @@
             data-toggle="collapse"
             data-target=".navbar-1"
           >
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <a tabindex="0" href="#">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
           </button>
         </div>
-        <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+        <div class="collapse navbar-collapse navbar-1">
           <ul class="site-navigation nav navbar-nav">
             <li>
-              <a href="./contact.html">Contact</a>
+              <a href="./pages/contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-<!------------------------------------------------ header END --------------------------------------->
+    <!------------------------------------------------ header END --------------------------------------->
     <!-------------------------------------------- MAIN CONTENT  ------------------------------------>
     <main>
       <!--  BLOC 1 PRESENTATION -->
@@ -85,7 +97,7 @@
         <article class="row tight-width-whitespace">
           <figure class="col-sm-12">
             <img
-              src="img/circle-logo-min.png"
+              src="./assets/img/circle-logo-min.png"
               class="center-block image-resize-mode"
               width="100"
               alt="logo desgin de la chouette agence"
@@ -109,13 +121,7 @@
           <figure class="col-sm-4">
             <div class="text-center">
               <span
-                class="
-                  et-icon-browser
-                  sm-shadow
-                  icon-dark-orange
-                  icons
-                  icon-lg
-                "
+                class="et-icon-browser sm-shadow icon-dark-orange icons icon-lg"
               ></span>
             </div>
             <h3 class="mg-md text-center">Web design</h3>
@@ -147,13 +153,7 @@
           <figure class="col-sm-4">
             <div class="text-center">
               <span
-                class="
-                  et-icon-edit
-                  sm-shadow
-                  icon-dark-orange
-                  icons
-                  icon-lg
-                "
+                class="et-icon-edit sm-shadow icon-dark-orange icons icon-lg"
               ></span>
             </div>
             <h3 class="mg-md text-center">Illustrations</h3>
@@ -172,6 +172,7 @@
               entreprise et à l&rsquo;intégrer à notre site. Cela nous à aider à
               doubler nos ventes en ligne à Lyon." <br />
               <a
+                tabindex="1"
                 hreflang="fr"
                 href="https://fr.linkedin.com/in/maxime-guillard-b9456134"
                 >Maxime Guillard,</a
@@ -213,7 +214,9 @@
               facilement trouvable sur les moteurs de recherche.
             </p>
             <p class="white">
-              <a hreflang="fr" href="./contact.html">Contactez notre équipe</a>
+              <a hreflang="fr" href="./pages/contact.html"
+                >Contactez notre équipe</a
+              >
             </p>
           </figure>
         </div>
@@ -236,12 +239,12 @@
             </h4>
             <a
               href="#"
-              data-lightbox="img/livres-journal-min.jpg"
+              data-lightbox="./assets/img/livres-journal-min.jpg"
               data-gallery-id="gallery-1"
               data-caption="Refonte d'un site web pour un journal local"
               data-frame="snapshot-lb"
               ><img
-                src="img/livres-journal-min.jpg"
+                src="./assets/img/livres-journal-min.jpg"
                 alt="image de livres colorés pour illustrer le journal lyonnais"
                 class="img-responsive portfolio-thumb"
             /></a>
@@ -256,12 +259,12 @@
             </h4>
             <a
               href="#"
-              data-lightbox="img/femme-photographe-min.jpg"
+              data-lightbox="./assets/img/femme-photographe-min.jpg"
               data-gallery-id="gallery-1"
               data-caption="Création d"
               data-frame="snapshot-lb"
               ><img
-                src="img/femme-photographe-min.jpg"
+                src="./assets/img/femme-photographe-min.jpg"
                 class="img-responsive portfolio-thumb"
                 alt="femme qui regarde dans son objectif photo "
             /></a>
@@ -278,12 +281,12 @@
             </h4>
             <a
               href="#"
-              data-lightbox="img/materiel-tech.bmp"
+              data-lightbox="./assets/img/materiel-tech.jpg"
               data-gallery-id="gallery-1"
               data-caption="Création d'un site internet pour un voyageur"
               data-frame="snapshot-lb"
               ><img
-                src="img/materiel-tech.jpg"
+                src="./assets/img/materiel-tech.jpg"
                 class="img-responsive portfolio-thumb"
                 alt="materiel high-tech d'objectif pour appareils photos"
             /></a>
@@ -298,12 +301,12 @@
             </h4>
             <a
               href="#"
-              data-lightbox="img/creatif-desk.jpg"
+              data-lightbox="./assets/img/creatif-desk.jpg"
               data-gallery-id="gallery-1"
               data-caption="Conception d'un site pour une agence de mariage"
               data-frame="snapshot-lb"
               ><img
-                src="img/creatif-desk.jpg"
+                src="./assets/img/creatif-desk.jpg"
                 class="img-responsive portfolio-thumb"
                 alt="une personne tape sur un clavier de desktop sur un bureau avec decoration festive"
             /></a>
@@ -318,13 +321,7 @@
 
       <!-- BLOC 5 CTA  -->
       <section
-        class="
-          bloc
-          bg-banniere
-          d-bloc
-          bloc-bg-texture
-          bloc-lg
-        "
+        class="bloc bg-banniere d-bloc bloc-bg-texture bloc-lg"
         id="bloc-5-cta"
       >
         <h4 class="light-bg mg-md text-center tc-white">
@@ -332,7 +329,7 @@
         </h4>
         <div class="col-sm-12 text-center">
           <a
-            href="./contact.html"
+            href="./pages/contact.html"
             class="btn btn-atomic-tangerine btn-rd btn-lg cta-hero"
             >Contact</a
           >
@@ -348,9 +345,10 @@
     ></a>
     <!-- FOOTER - BLOC 8 -->
     <footer class="bgc-atomic-tangerine d-bloc bloc-sm">
-      <h4 class="text-center white">
-        La chouette agence - Agence web basée à Lyon.
-      </h4>
+      <h5 class="text-center white">
+        Suivez notre actualitée et restez proche de nous depuis vos réseaux
+        sociaux favoris
+      </h5>
       <ul class="social text-center">
         <li class="col-sm-3">
           <a class="social" href="https://twitter.com/malho_stephane"
@@ -382,4 +380,5 @@
   <script src="./js/blocs.js" defer></script>
   <script src="./js/jquery.touchSwipe.js" defer></script>
   <script src="./js/gmaps.js" defer></script>
+  <script src="./js/jqBootstrapValidation.js" defer></script>
 </html>
