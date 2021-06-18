@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html prefix="og: https://ogp.me/ns#" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../assets/img/logo-title.jpg"
+    />
+    <link rel="stylesheet" type="text/css" href="../assets/css/et-line.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v4.7.0/css/all.min.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    /> 
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
+    <title>Formulaire - La chouette agence</title>
+    <meta
+      name="description"
+      content="Formulaire de l'agence de webdesign, La chouette agence"
+    />
+    <meta
+      property="og:description"
+      content="inscrivez vous à la chouette agence"
+    />
+    <!-- Analytics -->
+
+    <!-- Analytics END -->
+  </head>
+  <body>
+    <header class="bcg-white fixed-header">
+      <nav id="align-nav" class="navbar row">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="../index.html"
+            ><img
+              src="../assets/img/main-logo-min_adobespark-1.png"
+              alt="logo principal de la chouette agence représentant un hibou"
+              height="40"
+          /></a>
+          <button
+            id="nav-toggle"
+            type="button"
+            class="ui-navbar-toggle navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-1"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+          <ul class="site-navigation nav navbar-nav">
+            <li>
+              <a href="../index.html">Accueil</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- bloc-0 END -->
+    <main>
+      <!-- bloc-6 -->
+      <label class="first-label" for="name">
+        <section class="bloc bgc-atomic-tangerine d-bloc" id="bloc-6">
+          <h1 class="text-center hero-bloc-text tc-white">
+            Remplissez votre formulaire
+          </h1>
+
+          <div class="container bloc-lg col-sm-12">
+            <p class="text-center mg-lg tc-white tight-width-whitespace">
+              Nous sommes ravis que vous souhaitiez collaborer avec notre
+              agence. Parlez-nous de votre projet en complétant le formulaire
+              ci-dessous.
+            </p>
+          </div>
+        </section>
+      </label>
+      <!-- bloc-6 END -->
+
+      <!-- bloc-7 -->
+      <div class="bgc-grey l-bloc container bloc-lg col-sm-6" id="bloc-7">
+        <form
+          id="form_1"
+          novalidate
+          success-msg="Votre message à bien été envoyé."
+          fail-msg="Désolé, il semble que notre serveur de messagerie ne réponde pas, désolé pour le désagrément!"
+        >
+          <div class="form-group">
+            <label for="name"> Nom </label>
+            <input id="name" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="email"> Adresse email </label>
+            <input id="email" class="form-control" type="email" required />
+          </div>
+          <div class="form-group">
+            <label for="input_504"> Comment nous avez-vous connu ? </label>
+            <select name="form-group" id="input_504">
+              <option value="" disabled>Selectionnez une raison</option>
+              <option value="web">Sur le web</option>
+              <option value="parrainage">par parrainage</option>
+              <option value="pub">campagne publicitaire</option>
+              <option value="autre">autre</option>
+              <!-- <input
+                  class="form-control"
+                  type="email"
+                  required
+                  id="input_504"
+                /> -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message"> Brief de votre projet:</label
+            ><textarea
+              id="message"
+              class="form-control"
+              placeholder="Ajoutez autant de détails que nécessaire"
+              rows="4"
+              cols="50"
+              required
+            ></textarea>
+          </div>
+          <button
+            class="
+              bloc-button
+              btn btn-lg btn-block
+              cta-hero
+              btn-atomic-tangerine
+            "
+            type="submit"
+          >
+            Envoyer
+          </button>
+        </form>
+        <p>
+          contact@lachouetteagence.com, 2 place Sathonay 69001 Lyon, Ouvert de
+          9h à 18h, du lundi au vendredi
+        </p>
+      </div>
+      <!-- bloc-7 END -->
+    </main>
+    <!-- ScrollToTop Button -->
+    <a
+    class="bloc-button btn btn-d scrollToTop showScrollTop"
+    onclick="scrollToTarget('1')"
+    ><span class="fa fa-chevron-up"></span
+  ></a>
+    <!-- ScrollToTop Button END-->
+    <!-- Footer - bloc-8 -->
+    <footer
+      class="form-footer bgc-atomic-tangerine d-bloc col-sm-12"
+      id="bloc-8"
+    >
+      <div class="container bloc-sm">
+        <h4 class="text-center white">
+          Merci de faire confiance à la chouette agence - Lyon.
+        </h4>
+      </div>
+    </footer>
+    <!-- Footer - bloc-8 END -->
+    <!--------------------------------------        SCRIPT        -------------------->
+    <script
+      src="https://code.jquery.com/jquery-2.1.0.min.js"
+      integrity="sha256-8oQ1OnzE2X9v4gpRVRMb1DWHoPHJilbur1LP9ykQ9H0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.5/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/blocs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js" integrity="sha512-BNs09vwMdfabwyH36BehO8DJbV5S6RaO0vXqPqiMhYC8mZ4WsfwwPEVhMOl5D7gyrTSDDv98f3HgaOUDlFhywg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../assets/js/gmaps.js"></script>
+    <script src="../assets/js/jqBootstrapValidation.js"></script> 
+    <script src="https://use.fontawesome.com/93a6cc91fc.js"></script>
+    <!---------------------------------------       SCRIPT END      ------------------>
+  </body>
+  
+</html>
