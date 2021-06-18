@@ -1,15 +1,13 @@
 html {
     font-size: 62.5%;
-    
 } 
 body {
     margin: 0;
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    scrollbar-color: rgb(249, 118, 57);
+    /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
 } 
 img {
     object-fit: cover;
@@ -36,7 +34,7 @@ button {
 }
 a:hover {
     cursor: pointer;
-    color: rgba(249, 118, 57);
+    color: orange;
     text-decoration: none;
 }
 .first-label {
@@ -50,10 +48,10 @@ header {
     padding-top: 15px;
     height: auto;
     min-height: 80px;
-    border-bottom: 2px solid rgb(249, 118, 57);
+    border-bottom: 2px solid #B33200;
 } 
 main {
-    max-width: 1800px;
+    max-width: 1200px;
     margin: auto;
     padding-top: 70px;
 }
@@ -61,13 +59,6 @@ figure {
     margin: 0 auto;
 }
 .bloc-3-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#bloc-6 {
-    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,8 +74,8 @@ figure {
     justify-content: space-around;
     height: auto;
     text-align: center;
-    width: 100vw;
     padding: 5px;
+    margin: auto;
 }
 #bloc-8 {
     height: 110px;
@@ -98,8 +89,11 @@ figure {
     margin: auto;
     max-width: 350px;
 }
+blockquote {
+    border-color: #B33200;
+}
 blockquote p {
-    color:rgb(249, 118, 57);
+    color:#B33200;
     font-size: 1.7rem;
     font-weight: bold;
 }
@@ -108,7 +102,7 @@ blockquote p {
     overflow-x: hidden;
     -webkit-box-shadow: none;
     box-shadow: none;
-    background-color:rgb(249, 118, 57);
+    background-color:#B33200;
     margin: 5px; 
 }  
 .navbar-nav>li>a {
@@ -116,6 +110,9 @@ blockquote p {
     font-size: 2rem;
     font-weight: bold;
     margin-right: 15px;
+}
+footer {
+    padding: 20px 0;
 }
 .form-footer {
     height: 150px;
@@ -146,16 +143,7 @@ footer li ul {
     background-size: cover;
     position: relative;
 }
-    bloc-p {
-    padding: 0 50px; 
-}
-.bloc-md {
-    padding: 10px;
-}
 
-.bloc-sm {
-    padding: 5px;
-}
 #bloc-5-cta {
     min-height: 300px;
     height: 300px;
@@ -391,7 +379,7 @@ a {
     padding: 12px 28px 12px 28px;
     font-size: 2rem;
     font-weight: 700;
-    background-color: rgb(249, 118, 57);
+    background-color: #B33200;
 }
 .social {
     max-width: 400px;
@@ -439,7 +427,7 @@ h4 {
     margin-bottom: 24px;
 }
 .black-background {
-    background-color: rgba(165, 147, 99);
+    background-color: #B33200;
     padding: 40px 5px;
 }
 .bold-link {
@@ -450,27 +438,29 @@ h4 {
     background-color: #FFFFFF;
 }
 .bgc-atomic-tangerine {
-    background-color: rgb(249, 118, 57);
+    background-color: #B33200;
 }
 .tc-white {
     color: #FFF;
     position: relative;
 }
 .btn-atomic-tangerine:hover {
-    background: orange;
-    color: #FFFFFF;
+    opacity: 0.8;
+    color: orange;
 }
 .icon-dark-orange {
-    color: rgb(249, 118, 57);
-    border-color: rgb(249, 118, 57);
+    color: #B33200;
+    border-color: #B33200;
 }
-
 .bg-banniere {
-    background-image: url("../img/desk-worker-min.jpg");
-}
-
+    background-image: url("../img/desk-work-min-bg-scrall-adobespark.jpeg");
+    
+} 
 .bg-presentation {
-    background-image: url("../img/design-worker-min.jpg");
+    background-image: url("../img/design-worker-min_smartphone_adobespark.jpeg");
+}
+.bg-fixed {
+    background-image: url("../img/desk-work-min-bg-fixed-adobespark.jpeg");
 }
 select {
     display: flex;
@@ -479,19 +469,37 @@ select {
     font-size: 1.5rem;
 }
 select:focus {
-    color:rgb(249, 118, 57);
-    border: 2px solid rgb(249, 118, 57);
+    color:#B33200;
+    border: 2px solid #B33200;
 }
 option {
     font-size: 1.5rem;
     background-color: #FFF;
 }
+@media only screen and (max-width: 480px) {
+    .bg-banniere {
+        background-position-y: 60px;
+    }
+}
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+
     .bloc-lg {
         padding: 50px 25px;
     }
     .tight-width-whitespace {
         max-width: 400px;
+    }
+}
+@media only screen and (min-width: 480px) {
+    .bg-banniere {
+        background-image: url("../img/desk-work-min-adobespark.jpeg");
+    }
+    .bg-presentation {
+        background-image: url("../img/design-worker-min_adobespark.jpeg");
+        background-position-y: inherit;
+    }
+    .bg-fixed {
+        background-image: url("../img/desk-work-min-bg-fixed-adobespark.jpeg");
     }
 }
 @media only screen and (min-width: 768px) {
@@ -531,37 +539,6 @@ option {
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
     }
-    .nav > li .dropdown-menu a,
-    .nav > li .dropdown-menu a:hover {
-        color: #484848;
-    } 
-    .nav-invert .site-navigation {
-        left: 0;
-        right: 0;
-    }
-    .nav-center {
-        text-align: center;
-    }
-    .nav-center .navbar-header {
-        width: 100%;
-    }
-    .nav-center .navbar-header,
-    .nav-center .navbar-brand,
-    .nav-center .nav > li {
-        float: none;
-        display: inline-block;
-    }
-    .nav-center .site-navigation {
-        position: relative;
-        width: 100%;
-        right: 0;
-        margin-right: 0px;
-        margin-top: 20px;
-    }
-    .nav-center.mini-nav .navbar-toggle {
-        float: none;
-        margin: 10px auto 0;
-    }
     #container-display {
         display: flex;
         flex-direction: row;
@@ -574,21 +551,15 @@ option {
     .bloc-lg {
         padding: 100px 50px;
     }
-    .bloc { 
-    padding: 0 50px;
-    }
     #bloc-4-portfolio > article {
         display: flex;
         flex-direction: row;
     }
-    
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .b-parallax {
-        background-attachment: scroll;
+    .bg-fixed {
+        background-image: url("../img/desk-work-min-adobespark.jpeg");
     }
 }
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
