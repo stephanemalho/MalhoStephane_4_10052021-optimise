@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^stephanemalho.github.io/MalhoStephane_4_10052021-optimise\.com [NC]
+RewriteRule ^(.*)$ https://www.stephanemalho.github.io/MalhoStephane_4_10052021-optimise//$1 [L,R=301]
