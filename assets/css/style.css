@@ -111,7 +111,6 @@ blockquote p {
 .navbar-collapse {
   padding: 0;
   overflow-x: hidden;
-  -webkit-box-shadow: none;
   box-shadow: none;
   background-color: #b33200;
   margin: 5px;
@@ -149,8 +148,6 @@ footer li ul {
   clear: both;
   background: 50% 50% no-repeat;
   padding: 5px;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   position: relative;
 }
@@ -172,7 +169,6 @@ footer li ul {
 .bg-tr-edge,
 .bg-br-edge,
 .bg-repeat {
-  -webkit-background-size: auto;
   background-size: auto;
 }
 .bg-repeat {
@@ -345,11 +341,9 @@ a[data-lightbox]:hover::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
 }
 a[data-lightbox]:hover img {
   opacity: 0.6;
-  -webkit-animation-fill-mode: none;
   animation-fill-mode: none;
 }
 h1,
@@ -579,7 +573,6 @@ option {
     top: 40%;
     right: 20px;
     transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
   }
   #container-display {
     display: flex;
@@ -599,10 +592,5 @@ option {
   }
   .bg-fixed {
     background-image: url("../img/desk-work-min-adobespark.jpeg");
-  }
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
-  .b-parallax {
-    background-attachment: scroll;
   }
 }
