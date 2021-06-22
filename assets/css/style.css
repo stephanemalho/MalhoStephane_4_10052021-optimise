@@ -71,6 +71,16 @@ figure {
   background-color: #b33200;
   padding: 40px 5px;
 }
+.bloc-3-card a {
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+}
+.bloc-3-card a:hover {
+  cursor: pointer;
+  color: orange;
+  text-decoration: none;
+}
 #bloc-6 h1 {
   padding-top: 35px;
 }
@@ -191,6 +201,7 @@ footer li ul {
 }
 .d-bloc a .icon-md {
   color: rgba(255, 255, 255);
+  text-overflow: unset;
 }
 .d-bloc a:hover .icon-md {
   color: orange;
@@ -439,6 +450,9 @@ h4 {
 .bgc-white {
   background-color: #ffffff;
 }
+.contact-link-color {
+  color: #fff;
+}
 .bgc-atomic-tangerine {
   background-color: #b33200;
 }
@@ -503,6 +517,7 @@ option {
   .bg-presentation {
     background-image: url("../img/design-worker-min-adobespark.jpeg");
     background-position-y: inherit;
+
   }
   .bg-fixed {
     background-image: url("../img/desk-work-min-bg-fixed-adobespark.jpeg");
