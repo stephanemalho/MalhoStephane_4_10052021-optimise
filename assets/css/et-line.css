@@ -1,7 +1,8 @@
 @font-face {
     font-family: et-line;
-    src: url(../fonts/et-line.woff2) format('woff2');
-    src:url(../fonts/et-line.woff) format('woff'), url(../fonts/et-line.eot), url(../fonts/et-line.eot?#iefix) format('embedded-opentype'), url(../fonts/et-line.ttf) format('truetype'), url(../fonts/et-line.svg#et-line) format('svg');
+    src: url("//db.onlinewebfonts.com/t/ee5d74f0b75c5754c723eb16d34e3d65.woff2") format("woff2");
+    src: url("../fonts/et-line.eot") ;
+    src: url("../fonts/et-line.woff") format("woff"), url("../fonts/et-line.eot?#iefix") format("embedded-opentype"), url("../fonts/et-line.ttf") format("truetype"), url("../fonts/et-line.svg#et-line") format("svg");
     font-weight: 400;
     font-style: normal
 }
