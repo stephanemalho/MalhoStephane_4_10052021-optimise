@@ -30,7 +30,7 @@
       name="description"
       content="Agence web design à Lyon et région Lyonnaise pour aider les entreprises à gagner en visibilité sur internet"
     />
-    <!-- META OG AND TWITTER  -->
+    <!--                      META OG AND TWITTER                 -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@chouetteagence" />
     <meta
@@ -47,19 +47,19 @@
       content="comment aider les entreprises à devenir attractives et visibles sur internet avec la chouette agence"
     />
     <meta property="og:image" content="#" />
-    <!-- meta og end  -->
-    <!-- ANALITICS -->
-
-    <!-- Analytics END -->
+    <!--                          meta og end                    -->
+    <!--                           ANALITICS                     -->
+    <!--                         Analytics END                   -->
   </head>
   <body>
-    <!-- HEADER -->
-    <header>
+    <!--                             HEADER                      -->
+    <header role="banner">
       <nav id="align-nav" class="navbar">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">
             <img
               src="./assets/img/main-logo-min-adobespark.png"
+              aria-label="logo de la chouette agence"
               alt="logo principal de la chouette agence représentant un hibou"
               height="40"
           /></a>
@@ -71,13 +71,16 @@
             data-target=".navbar-1"
             tabindex="0"
           >
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </a>
         </div>
         <div class="collapse navbar-collapse navbar-1">
           <ul class="site-navigation nav navbar-nav">
+            <li>
+              <a href="./pages/accessibilité.html" accesskey="0">Accessibilité</a>
+            </li>
             <li>
               <a href="./pages/contact.html">Contact</a>
             </li>
@@ -85,10 +88,10 @@
         </div>
       </nav>
     </header>
-    <!-- header END -->
-    <!-- MAIN CONTENT -->
-    <main>
-      <!--  BLOC 1 PRESENTATION -->
+    <!--                              header END                    -->
+    <!--                             MAIN CONTENT                   -->
+    <main role="main">
+      <!--                       BLOC 1 PRESENTATION                -->
       <div
         class="
           bloc
@@ -106,19 +109,18 @@
               src="./assets/img/circle-logo-min.png"
               class="center-block image-resize-mode"
               width="100"
+              aria-label="Logo principal de l'agence"
               alt="logo desgin de la chouette agence"
             />
-            <h1 class="light-bg text-center hero-bloc-text tc-white">
-              La chouette agence
-            </h1>
+            <h1 class="light-bg text-center tc-white">La chouette agence</h1>
           </figure>
         </article>
       </div>
-      <!-- bloc-1-presentation END -->
+      <!--                      bloc-1-presentation END                  -->
 
-      <!-- BLOC 2 SERVICES  -->
+      <!--                          BLOC 2 SERVICES                      -->
       <section class="bloc bgc-white l-bloc" id="bloc-2-services">
-        <h2 class="text-center">La chouette agence c'est quoi</h2>
+        <h2 class="text-center" tabindex="0" accesskey="2">La chouette agence c'est quoi</h2>
         <p class="text-center">
           C'est une agence de web design qui aide les entreprises à devenir
           attractives et visibles sur internet
@@ -128,13 +130,14 @@
             <div class="text-center">
               <span
                 class="et-icon-browser sm-shadow icon-dark-orange icons icon-lg"
+                aria-label="icon d'un écran d'ordinateur"
               ></span>
             </div>
             <h3 class="mg-md text-center">Web design</h3>
             <p class="text-center">
               Que vous ayez un site web qui a besoin d&rsquo;un rafraîchissement
-              ou que vous partiez de zéro, laissez-nous vous réaliser un design
-              dont vous serez fier.
+              ou que vous partiez de zéro, laissez-nous vous proposer de
+              réaliser un design dont vous serez fier.
             </p>
           </figure>
           <figure class="col-sm-4">
@@ -147,19 +150,21 @@
                   icons
                   icon-lg
                 "
+                aria-label="icon d'un graphique de design"
               ></span>
             </div>
             <h3 class="mg-md text-center">&nbsp;Stratégie</h3>
             <p class="text-center">
               Plutôt que de suggérer des designs à la mode, nous travaillerons
               avec vous pour comprendre vos objectifs commerciaux afin de vous
-              proposer le meilleur design possible.<br />
+              proposer le meilleur design possible.
             </p>
           </figure>
           <figure class="col-sm-4">
             <div class="text-center">
               <span
                 class="et-icon-edit sm-shadow icon-dark-orange icons icon-lg"
+                aria-label="icon représentant un crayon"
               ></span>
             </div>
             <h3 class="mg-md text-center">Illustrations</h3>
@@ -171,15 +176,21 @@
           </figure>
         </article>
         <figure class="text-center">
-          <blockquote cite="https://avosfourchettes.com/">
+          <blockquote
+            cite="https://avosfourchettes.com/"
+            aria-label="Avis de Maxime Guillard à propos de la chouette agence"
+          >
             <p>
-              "La chouette agence est une excellente agence web ! Les web
-              designers ont réussi à capturer l&rsquo;éssence de notre
-              entreprise et à l&rsquo;intégrer à notre site. Cela nous à aider à
-              doubler nos ventes en ligne à Lyon." <br />
+              <q>
+                La chouette agence est une excellente agence web ! Les web
+                designers ont réussi à capturer l&rsquo;éssence de notre
+                entreprise et à l&rsquo;intégrer à notre site. Cela nous à aider
+                à doubler nos ventes en ligne à Lyon. </q
+              ><br />
               <a
                 tabindex="0"
                 hreflang="fr"
+                aria-label="lien linkedin de Maxime Guillard"
                 href="https://fr.linkedin.com/in/maxime-guillard-b9456134"
                 >Maxime Guillard,</a
               >
@@ -188,9 +199,9 @@
           </blockquote>
         </figure>
       </section>
-      <!-- bloc-2-services END -->
+      <!--                        bloc-2-services END                 -->
 
-      <!-- BLOC 3  -->
+      <!--                              BLOC 3                        -->
       <section
         class="
           bloc
@@ -203,36 +214,37 @@
       >
         <div class="container bloc-lg">
           <figure class="bloc-3-card">
-            <h2 class="mg-md text-center tc-white">Que souhaitons nous</h2>
+            <h2 class="mg-md text-center tc-white" tabindex="0" accesskey="3">Que souhaitons nous</h2>
             <p class="text-center white">
               Nous souhaitons aider les entreprises de la région Lyonnaise à se
-              développer et à connaître le succès. Nous travaillons pour aider
+              développer et à connaître le succès. Notre agence travaille pour aider
               les entreprises locales à attirer de nouveaux clients.
             </p>
             <p class="text-center white">
-              Nous aimons collaborer avec des entrepreneurs créatifs et des
+              Nos équipes aiment collaborer avec des entrepreneurs créatifs et des
               entreprises locale, qu&rsquo;elles aient besoin de créer un site
               de A à Z ou de donner un coup de jeune à leur site. Que vous ayez
               besoin d’une identité visuelle complète ou d’une refonte de votre
-              site, n&rsquo;hésitez pas à nous contacter. Nous travaillerons
-              ensemble pour créer des sites beau et bien structurés, qui seront
-              facilement trouvable sur les moteurs de recherche.
+              site, n&rsquo;hésitez pas à nous contacter, nous travaillerons
+              ensemble pour créer du contenu qualitatif et accessible à tous
+              afin de rendre l'expérience de la navigation sur votre site plus
+              agréable
             </p>
-            
-                <a href="mailto:contact@lachouetteagence.com"
-                >Contactez notre équipe</a>
-            
+            <a
+              href="mailto:contact@lachouetteagence.com"
+              title="contact par mail"
+              >Contactez notre équipe</a
+            >
           </figure>
         </div>
       </section>
-      <!-- bloc-3- END -->
-
-      <!-- BLOC 4 PORTFOLIO  -->
+      <!--                        bloc-3- END                         -->
+      <!--                      BLOC 4 PORTFOLIO                      -->
       <section
         class="bgc-white bg-lines l-bloc col-sm-12 text-center"
         id="bloc-4-portfolio"
       >
-        <h3>
+        <h3 tabindex="0" accesskey="4">
           Nous travaillons avec beaucoup de clients, voici nos réalisations.
         </h3>
 
@@ -329,64 +341,86 @@
           </figure>
         </article>
       </section>
-      <!-- bloc-4-portfolio END -->
+      <!--                     bloc-4-portfolio END                     -->
 
-      <!-- BLOC 5 CTA  -->
+      <!--                         BLOC 5 CTA                           -->
       <section
         class="bloc bg-fixed d-bloc bloc-bg-texture bloc-lg"
         id="bloc-5-cta"
       >
-        <h4 class="light-bg mg-md text-center tc-white">
+        <h5 class="light-bg mg-md text-center">
           Redonnez vie à votre projet et contactez notre équipe!
-        </h4>
+        </h5>
         <div class="col-sm-12 text-center">
           <a
             href="./pages/contact.html"
             role="button"
             class="btn btn-atomic-tangerine btn-rd btn-lg cta-hero"
+            accesskey="5"
             >Contact</a
           >
         </div>
       </section>
 
-      <!-- bloc-5-cta END -->
+      <!--                           bloc-5-cta END                        -->
     </main>
-    <a
-      class="bloc-button btn btn-d scrollToTop showScrollTop"
-      onclick="scrollToTarget('1')"
-      ><span class="fa fa-chevron-up"></span
-    ></a>
-    <!-- FOOTER - BLOC 8 -->
-    <footer class="bgc-atomic-tangerine d-bloc">
-      <h5 class="text-center white">
+    <!--                          Main section end                       -->
+    <!--                           FOOTER - BLOC 8                       -->
+    <footer class="bgc-atomic-tangerine d-bloc" role="contentinfo">
+      <h6 class="text-center white" tabindex="0" accesskey="6">
         Suivez notre actualitée et restez proche de nous depuis vos réseaux
         sociaux favoris
-      </h5>
-      <ul class="social text-center">
+      </h6>
+      <ul class="social">
         <li class="col-sm-3">
           <a class="social" href="https://twitter.com/malho_stephane"
-            ><span class="fa fa-twitter icon-md"> </span
+            ><span
+              class="fa fa-twitter icon-md"
+              title="Twitter"
+              aria-label="retrouvez nous sur Twitter"
+            ></span
           ></a>
         </li>
         <li class="col-sm-3">
           <a class="social" href="https://www.facebook.com/LaChouetteAgence/"
-            ><span class="fa fa-facebook icon-md"> </span
+            ><span
+              class="fa fa-facebook icon-md"
+              title="Facebook"
+              aria-label="retrouvez nous sur Facebook"
+            ></span
           ></a>
         </li>
         <li class="col-sm-3">
           <a class="social" href="https://dribbble.com/quarkend/about"
-            ><span class="fa fa-dribbble icon-md"> </span
+            ><span
+              class="fa fa-dribbble icon-md"
+              title="Dribbble"
+              aria-label="retrouvez nous sur Dribbble"
+            ></span
           ></a>
         </li>
         <li class="col-sm-3">
-          <a class="social"  href="https://www.instagram.com/lachouetteagence/"
-            ><span class="fa fa-instagram icon-md"> </span
+          <a class="social" href="https://www.instagram.com/lachouetteagence/"
+            ><span
+              class="fa fa-instagram icon-md"
+              title="Instagram"
+              aria-label="retrouvez nous sur Instagram"
+            ></span
           ></a>
         </li>
       </ul>
     </footer>
-    <!-- Footer - bloc-8 END -->
-    <!-- SCRIPT  -->
+    <!--                         Footer - bloc-8 END               -->
+    <!--                          scroll to the top                -->
+    <a
+      class="bloc-button btn btn-d scrollToTop showScrollTop"
+      onclick="scrollToTarget('1')"
+      title="Retour en haut de page"
+      tabindex="0"
+      ><span class="fa fa-chevron-up"></span
+    ></a>
+    <!--                          scroll to the top end            -->
+    <!--                                  SCRIPT                   -->
     <script
       src="https://code.jquery.com/jquery-2.1.0.min.js"
       integrity="sha256-8oQ1OnzE2X9v4gpRVRMb1DWHoPHJilbur1LP9ykQ9H0="
@@ -404,5 +438,5 @@
     <script src="./assets/js/jqBootstrapValidation.js"></script>
     <script src="https://use.fontawesome.com/93a6cc91fc.js"></script>
   </body>
-  <!--  SCRIPT  END -->
+  <!--                                  SCRIPT  END                -->
 </html>

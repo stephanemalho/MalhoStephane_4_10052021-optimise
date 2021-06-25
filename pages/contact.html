@@ -27,11 +27,12 @@
       property="og:description"
       content="inscrivez vous à la chouette agence"
     />
-    <!-- Analytics -->
+    <!--                        Analytics                   -->
 
-    <!-- Analytics END -->
+    <!--                      Analytics END                 -->
   </head>
   <body>
+    <!--                         HEADER                     -->
     <header class="bcg-white fixed-header">
       <nav id="align-nav" class="navbar">
         <div class="navbar-header" >
@@ -57,17 +58,18 @@
         <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
           <ul class="site-navigation nav navbar-nav">
             <li>
-              <a href="../index.html" tabindex="0">Accueil</a>
+              <a href="../index.html" tabindex="0" accesskey="1">Accueil</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <!-- bloc-0 END -->
+    <!--                         header end                      -->
+    <!--                         MAIN SECTION                    -->
     <main>
-      <!-- bloc-6 -->
+      <!--                          BLOC-6                       -->
         <section class="bloc bgc-atomic-tangerine d-bloc" id="bloc-6">
-          <h1 class="text-center hero-bloc-text tc-white">
+          <h1 class="text-center tc-white">
             Remplissez votre formulaire
           </h1>
 
@@ -79,14 +81,14 @@
             </p>
           </div>
         </section>
-      <!-- bloc-6 END -->
+      <!--                          bloc-6 END                   -->
 
-      <!-- bloc-7 -->
+      <!--                            BLOC-7                     -->
       <div class="bgc-grey l-bloc container bloc-lg col-sm-6" id="bloc-7">
         <form>
           <div class="form-group">
             <label for="name"> Nom </label>
-            <input id="name" class="form-control" required />
+            <input id="name" class="form-control" autofocus required />
           </div>
           <div class="form-group">
             <label for="email"> Adresse email </label>
@@ -131,6 +133,7 @@
             Envoyer
           </button>
         </form>
+        <!--                          ASIDE WITH MAP                 -->
         <aside>
           <p class="mail">
             <a href="mailto:contact@lachouetteagence.com">contact@lachouetteagence.com</a>
@@ -142,17 +145,12 @@
           </p>
           </a>
         </aside>
+        <!--                         aside with map end               -->
       </div>
-      <!-- bloc-7 END -->
+      <!--                               bloc-7 END                   -->
     </main>
-    <!-- ScrollToTop Button -->
-    <a
-      class="bloc-button btn btn-d scrollToTop showScrollTop"
-      onclick="scrollToTarget('1')"
-      ><span class="fa fa-chevron-up"></span
-    ></a>
-    <!-- ScrollToTop Button END-->
-    <!-- Footer - bloc-8 -->
+    <!--                              Main section end                -->
+    <!--                               FOOTER-BLOC-8                  -->
     <footer
       class="form-footer bgc-atomic-tangerine d-bloc col-sm-12"
       id="bloc-8"
@@ -163,8 +161,15 @@
         </h4>
       </div>
     </footer>
-    <!-- Footer - bloc-8 END -->
-    <!--  SCRIPT -->
+    <!--                             Footer - bloc-8 END              -->
+    <!--                             SCROLLTOTOP BUTTON               -->
+    <a
+    class="bloc-button btn btn-d scrollToTop showScrollTop"
+    onclick="scrollToTarget('1')" title="Retour en haut de page" tabindex="0"
+    ><span class="fa fa-chevron-up"></span
+  ></a>
+    <!--                            ScrollToTop Button END             -->
+    <!--                                    SCRIPT                     -->
     <script
       src="https://code.jquery.com/jquery-2.1.0.min.js"
       integrity="sha256-8oQ1OnzE2X9v4gpRVRMb1DWHoPHJilbur1LP9ykQ9H0="
@@ -181,6 +186,6 @@
     <script src="../assets/js/gmaps.js"></script>
     <script src="../assets/js/jqBootstrapValidation.js"></script>
     <script src="https://use.fontawesome.com/93a6cc91fc.js"></script>
-    <!--    SCRIPT END   -->
+    <!--                                   SCRIPT END                  -->
   </body>
 </html>

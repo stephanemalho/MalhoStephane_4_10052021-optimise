@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html prefix="og: https://ogp.me/ns#" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../assets/img/logo-title-min.jpeg"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="../assets/css/et-line.css" /> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
+    <title>Accessibilité - La chouette agence</title>
+    <meta
+      name="description"
+      content="Page accessibilitée de l'agence de webdesign, La chouette agence"
+    />
+    <meta
+      property="og:description"
+      content="Guide d'accessibilitée pour naviger sur notre site"
+    />
+    <!--                        Analytics                   -->
+
+    <!--                      Analytics END                 -->
+  </head>
+  <body>
+    <!--                         HEADER                     -->
+    <header class="bcg-white fixed-header">
+      <nav id="align-nav" class="navbar">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="../index.html" tabindex="0"
+            ><img
+              src="../assets/img/main-logo-min-adobespark.png"
+              alt="logo principal de la chouette agence représentant un hibou"
+              height="40"
+          /></a>
+          <button
+            id="nav-toggle"
+            type="button"
+            class="ui-navbar-toggle navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-1"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+          <ul class="site-navigation nav navbar-nav">
+            <li>
+              <a href="../index.html" tabindex="0" accesskey="1">Accueil</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--                         header end                      -->
+    <!--                         MAIN SECTION                    -->
+    <main>
+      <!--                          BLOC-6                       -->
+      <section class="bloc bgc-atomic-tangerine d-bloc" id="bloc-6">
+        <h1 class="text-center tc-white">Accessibilité</h1>
+
+        <div class="container bloc-lg col-sm-12">
+          <p class="text-center mg-lg tc-white tight-width-whitespace">
+            La Chouette agence vous présente ce guide afin de rendre la
+            navigation sur nos pages accessible à tous les utilisateurs.
+          </p>
+        </div>
+      </section>
+      <!--                          bloc-6 END                        -->
+
+      <!--                            BLOC-ACCESSIBILITY              -->
+      <section class="access-flow">
+        <h2>Pourquoi créer une page accessibilité ?</h2>
+        <p>
+          La chouette agence à développé son site dans le but d'accorder une
+          expérience utilisateur optimale. Proposer une page d'accessibilitée
+          permet d'améliorer le parcours de navigation d'un utilisateur ayant
+          recours à une aide sensoriel.
+        </p>
+        <p>
+          Il est toutefois important de respecter les normes en vigueur telle
+          qu'indiquées par
+          <a href="https://www.w3.org/WAI/standards-guidelines/fr"
+            >les normes W3C</a
+          >.
+        </p>
+        <article>
+          <h3>Conformité</h3>
+          <p>
+            Les pages de se site sont régulièrement mises à jour en respectant
+            la norme WCAG AA, et répondant aux règles principales
+            d'accessibilitée des contenus web du W3C.
+          </p>
+          <p>
+            Tout nos titres sont balisées et structurées dans l'ordre et le
+            respect des règles actuelles de la sémantique HTML5
+          </p>
+          <h3>Naviguer sur ce site</h3>
+          <p>
+            Les pages contiennent un lien vers la page d'acceuil et le menu en
+            haut de page donne accès à la page accéssibilité en priorité afin de
+            guider plus rapidement l'utilisateur de liseuse d'écran. Le menu est
+            similaire sur toutes les pages pour garantir l'accès rapide et
+            cohérent à l'acceuil et à l'accéssibilité.
+          </p>
+          <p>
+            Les tabindex permettent de naviguer via la touche tabulation de votre
+            clavier
+          </p>
+          <p>
+            Voici la listes des <em>accessKey</em> que vous pourrez utiliser:
+          </p>
+          <ul>
+            <li>0 = Accessibilité</li>
+            <li>1 = Acceuil</li>
+            <li>2 = La chouette agence c'est quoi?</li>
+            <li>3 = Que souhaitons nous?</li>
+            <li>4 = Nos réalisations</li>
+            <li>5 = Formulaire de contact</li>
+            <li>6 = Réseaux sociaux</li>
+          </ul>
+          <em>tableau de réference officielle du site <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Global_attributes/accesskey">"mdn web doc"</a></em>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Windows</th>
+                <th>Linux</th>
+                <th>Mac</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Firefox</th>
+                <td colspan="2" rowspan="1">
+                  <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd><em>touche</em></kbd>
+                </td>
+                <td>
+                  Pour Firefox 57 et les versions ultérieures :
+                  <kbd>Control</kbd> + <kbd>Option</kbd> +
+                  <kbd><em>touche</em></kbd> ou <kbd>Control</kbd> +
+                  <kbd>Alt</kbd> + <kbd><em>touche</em></kbd
+                  ><br />
+                  Pour Firefox 14 et les versions ultérieures :
+                  <kbd>Control</kbd> + <kbd>Alt</kbd> +
+                  <kbd><em>touche</em></kbd
+                  ><br />
+                  Pour Firefox 13 et les versions antérieures :
+                  <kbd>Control</kbd> + <kbd><em>touche</em></kbd>
+                </td>
+              </tr>
+              <tr>
+                <th>Edge</th>
+                <td>
+                  <kbd>Alt</kbd> + <kbd><em>touche</em></kbd>
+                </td>
+                <td colspan="2" rowspan="1">N/A</td>
+              </tr>
+              <tr>
+                <th>Internet Explorer</th>
+                <td>
+                  <kbd>Alt</kbd> + <kbd><em>touche</em></kbd>
+                </td>
+                <td colspan="2" rowspan="1">N/A</td>
+              </tr>
+              <tr>
+                <th>Google Chrome</th>
+                <td colspan="2" rowspan="1">
+                  <kbd>Alt</kbd> + <kbd><em>touche</em></kbd>
+                </td>
+                <td>
+                  <kbd>Control</kbd> + <kbd>Alt</kbd> +
+                  <kbd><em>touche</em></kbd>
+                </td>
+              </tr>
+              <tr>
+                <th>Safari</th>
+                <td>
+                  <kbd>Alt</kbd> + <kbd><em>touche</em></kbd>
+                </td>
+                <td>N/A</td>
+                <td>
+                  <kbd>Control</kbd> + <kbd>Alt</kbd> +
+                  <kbd><em>touche</em></kbd>
+                </td>
+              </tr>
+              <tr>
+                <th>Opera 15+</th>
+                <td colspan="2" rowspan="1" style="text-align: center">
+                  <kbd>Alt</kbd> + <kbd><em>key</em></kbd>
+                </td>
+                <td>
+                  <kbd>Control</kbd> + <kbd>Alt</kbd> + <kbd><em>key</em></kbd>
+                </td>
+              </tr>
+              <tr>
+                <th>Opera 12</th>
+                <td colspan="3" rowspan="1">
+                  <kbd>Shift</kbd> + <kbd>Esc</kbd> ouvre une liste de contenu
+                  accessible via la touche <code>accesskey</code>, on peut alors
+                  ensuite choisir l'élément voulu grâce la touche
+                  <kbd><em>touche</em></kbd>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <article>
+          <h2>Pour vous aider sur ces pages</h2>
+          <p>
+            Ce site utilise des feuilles de style en cascade pour la mise en
+            forme de la page
+          </p>
+          <p>
+            Le format des pages est "responsive" ce qui signifie que le contenu
+            s'adaptera ou ce modifiera en foction de la taille d'écran, du petit
+            smartphone au grand ordinateur sans oublier les tablettes.
+          </p>
+          <p>
+            Les contrastes sont vérifiés afin de garantir la bonne lecture des
+            contenus.
+          </p>
+        </article>
+        <h3>Polices de caractère</h3>
+        <p>
+          Nous utilisons des tailles de police relatives, compatible avec
+          l'option de "taille du texte" pour garantir le confort de
+          l'utilisateur qui en nécessite l'utilisation.
+        </p>
+        <p>
+          La police HELVETICA est ou Sans-sérif garantissent une lecture facile.
+        </p>
+        <h3>Liens</h3>
+        <p>
+          Le nombre de liens est limité au besoin d'information ou de connection
+          lorsque néccessaire.
+        </p>
+        <p>
+          Chaques images cliquables disposent d'un titre afin d'informer sur sa
+          direction ou sa fonction.
+        </p>
+        <p>
+          Les liens textes sont visibles par un souligné, un changement de
+          couleur, un changement de pointeur de la souris. Parfois les trois si
+          le lien n'est assez pas visible
+        </p>
+        <h3>Formulaire</h3>
+        <p>
+          Chaque entrée est lié à son label, le focus est attribué à la première
+          entrée du formulaire
+        </p>
+      </section>
+      <!--                          bloc accessibility end            -->
+    </main>
+    <!--                              Main section end                -->
+    <!--                               FOOTER-BLOC-8                  -->
+    <footer
+      class="form-footer bgc-atomic-tangerine d-bloc col-sm-12"
+      id="bloc-8"
+    >
+      <div class="container bloc-sm">
+        <h4 class="text-center white">
+          Merci de faire confiance à la chouette agence - Lyon.
+        </h4>
+      </div>
+    </footer>
+    <!--                             Footer - bloc-8 END              -->
+    <!--                             SCROLLTOTOP BUTTON               -->
+    <a
+      class="bloc-button btn btn-d scrollToTop showScrollTop"
+      onclick="scrollToTarget('1')"
+      title="Retour en haut de page"
+      tabindex="0"
+      ><span class="fa fa-chevron-up"></span
+    ></a>
+    <!--                            ScrollToTop Button END             -->
+    <!--                                    SCRIPT                     -->
+    <script
+      src="https://code.jquery.com/jquery-2.1.0.min.js"
+      integrity="sha256-8oQ1OnzE2X9v4gpRVRMb1DWHoPHJilbur1LP9ykQ9H0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.5/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/blocs.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"
+      integrity="sha512-BNs09vwMdfabwyH36BehO8DJbV5S6RaO0vXqPqiMhYC8mZ4WsfwwPEVhMOl5D7gyrTSDDv98f3HgaOUDlFhywg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../assets/js/gmaps.js"></script>
+    <script src="../assets/js/jqBootstrapValidation.js"></script>
+    <script src="https://use.fontawesome.com/93a6cc91fc.js"></script>
+    <!--                                   SCRIPT END                  -->
+  </body>
+</html>
