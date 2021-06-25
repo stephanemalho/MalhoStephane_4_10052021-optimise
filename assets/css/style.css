@@ -18,11 +18,12 @@ aside {
   display: none;
 }
 form {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 p,
-a {
-  font-size: 1.7rem;
+a,
+li {
+  font-size: 1.8rem;
   font-weight: 700;
 }
 p a {
@@ -35,7 +36,7 @@ button {
   text-decoration: none;
 }
 .light-bg {
-  text-shadow: 2px 1px 1px rgba(0, 0, 0);
+  text-shadow: 0 2px rgba(0, 0, 0);
 }
 a:hover {
   cursor: pointer;
@@ -112,6 +113,7 @@ figure {
 }
 blockquote {
   border-color: #b33200;
+  margin-top: 50px;
 }
 blockquote p {
   color: #b33200;
@@ -213,13 +215,13 @@ footer li ul {
   height: 400px;
 }
 #bloc-1-hero h1 {
-  font-size: 3.2rem;
+  font-size: 3.4rem;
 }
 .navbar {
   margin-bottom: 0;
   z-index: 1;
 }
- .navbar-brand {
+.navbar-brand {
   height: auto;
   padding: 5px 15px;
   font-size: 2.5rem;
@@ -227,21 +229,10 @@ footer li ul {
   font-weight: 600;
   line-height: 44px;
   position: relative;
-} 
-/* .navbar-brand img {
-  max-height: 200px;
-  margin: 0 5px 0 0;
-  display: inline;
-} */
-/* .navbar-brand img[src$="svg"] {
-  min-width: 100px;
 }
-.nav-center .navbar-brand img {
-  margin: 0;
-} */
 .navbar .nav {
   padding-top: 2px;
-  margin-right: -16px;
+  margin-right: 5px;
   float: right;
   z-index: 1;
 }
@@ -249,6 +240,9 @@ footer li ul {
   float: left;
   margin-top: 4px;
   font-size: 1.6rem;
+}
+.nav li:first-child {
+  border-right: 2px solid white;
 }
 .navbar-nav .open .dropdown-menu > li > a {
   text-align: inherit;
@@ -321,7 +315,8 @@ button {
 }
 .scrollToTop {
   width: 40px;
-  height: 40px;
+  height: 30px;
+  line-height: 2px;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -357,12 +352,6 @@ a[data-lightbox]:hover img {
   opacity: 0.6;
   animation-fill-mode: none;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p,
 label,
 .btn,
@@ -370,16 +359,9 @@ a {
   font-family: "helvetica", sans-serif;
   font-weight: 400;
   color: black;
-  font-size: 1.7rem;
 }
 .container {
   max-width: 1200px;
-}
-.hero-bloc-text {
-  font-size: 3.8rem;
-}
-.hero-bloc-text-sub {
-  font-size: 3.6rem;
 }
 .tight-width-whitespace {
   margin: auto;
@@ -410,23 +392,36 @@ a {
   align-items: center;
   text-decoration: none;
 }
-h2 {
-  font-size: 2.2rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.4em;
-  text-transform: uppercase;
   font-weight: bold;
+  color: white;
+}
+h2 {
+  font-size: 2.4rem;
+  color: #000;
+  text-transform: uppercase;
 }
 h3 {
-  font-size: 2rem;
-  text-transform: uppercase;
+  font-size: 2.3rem;
   font-weight: 700;
+  text-transform: uppercase;
   color: #000;
 }
 h4 {
   color: black;
-  text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.6rem;
+}
+h5 {
+  font-size: 2.2rem;
+}
+h6 {
+  font-size: 2rem;
 }
 .med-width-whitespace {
   max-width: 800px;
@@ -491,6 +486,20 @@ option {
   font-size: 1.5rem;
   background-color: #fff;
 }
+.access-flow {
+  padding: 15px;
+}
+table {
+  background-color: rgb(248, 241, 241);
+}
+td,
+th {
+  border: 2px solid #fff;
+  padding: 5px;
+}
+kbd {
+  background-color: #b33200;
+}
 @media only screen and (max-width: 310px) {
   .navbar-brand img {
     position: absolute;
@@ -517,7 +526,6 @@ option {
   .bg-presentation {
     background-image: url("../img/design-worker-min-adobespark.jpeg");
     background-position-y: inherit;
-
   }
   .bg-fixed {
     background-image: url("../img/desk-work-min-bg-fixed-adobespark.jpeg");
@@ -557,7 +565,7 @@ option {
     width: 50%;
   }
   aside:hover {
-      opacity: 0.7;
+    opacity: 0.7;
   }
   aside a {
     position: relative;
