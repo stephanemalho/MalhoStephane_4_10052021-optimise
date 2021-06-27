@@ -241,7 +241,7 @@ footer li ul {
   margin-top: 4px;
   font-size: 1.6rem;
 }
-.nav li:first-child {
+.slash {
   border-right: 2px solid white;
 }
 .navbar-nav .open .dropdown-menu > li > a {
@@ -491,6 +491,7 @@ option {
 }
 table {
   background-color: rgb(248, 241, 241);
+  margin-bottom: 10px;
 }
 td,
 th {
@@ -504,6 +505,18 @@ kbd {
   .navbar-brand img {
     position: absolute;
     clip: rect(0px, 36px, 68px, 0px);
+  }
+  .navbar-nav li {
+    padding-left: 10px;
+  }
+  .slash {
+    border: none;
+  }
+  table {
+    display: none;
+  }
+  .access-flow {
+    padding: 20px 2px;
   }
 }
 @media only screen and (max-width: 480px) {
