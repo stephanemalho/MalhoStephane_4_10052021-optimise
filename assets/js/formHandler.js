@@ -2,9 +2,9 @@ $(function()
 {	
 	$("input,textarea").jqBootstrapValidation(
     {
-     	preventSubmit: true,
-     	submitSuccess: function($form, event)
-	 	{			
+    preventSubmit: true,
+    submitSuccess: function($form, event)
+	{			
 			if(!$form.attr('action')) // Check form doesnt have action attribute
 			{
 				event.preventDefault(); // prevent default submit behaviour
@@ -33,13 +33,13 @@ $(function()
 					formData[fieldID] = fieldData;		
 				});
 	
-				$.ajax({
-		        	url: processorFile,
-		    		type: "POST",
-		    		data: formData,
-		    		cache: false,
-		    		success: function() // Success
-		 			{  
+	    	$.ajax({
+		        url: processorFile,
+		    	type: "POST",
+		    	data: formData,
+		    	cache: false,
+		    	success: function() // Success
+		{  
 						if($form.is('[success-msg]')) // Show Success Message
 						{
 							$form.append("<div id='form-alert'><div class='alert alert-success'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>"+$form.attr('success-msg')+"</strong></div></div>");
@@ -52,17 +52,16 @@ $(function()
 						$form.trigger("reset"); // Clear Form	
 		 	   		},
 			   		error: function() // Fail
-			   		{
+			{
 						if($('#form-alert').length == 0)
 						{
 							$form.append("<div id='form-alert'><div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>"+$form.attr('fail-msg')+"</strong></div></div>");
 						}	
-			   		},
-		   		});
-			}
-         },
-         filter: function() // Handle hidden form elements
-		 {
+			},
+		});
+			}  },
+         filter: function() // Handle hidden form elements 
+		  {
 			 return $(this).is(":visible");
          },
 	 });
