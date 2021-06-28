@@ -171,6 +171,10 @@ footer li ul {
   flex-direction: column;
   justify-content: space-around;
 }
+#bloc-5-cta h3 {
+  background-color: #b33200;
+  text-shadow: none;
+}
 .bg-center,
 .bg-l-edge,
 .bg-r-edge,
