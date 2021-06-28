@@ -1,0 +1,11 @@
+{
+    "short_name": "Chouette agence",
+    "name": "La chouette agence du web",
+    "icons": [
+        {
+        "src": "./assets/img/logo-title-min.jpeg",
+        "type": "image.png",
+    "sizes": "220x40"
+        }
+    ]
+}
