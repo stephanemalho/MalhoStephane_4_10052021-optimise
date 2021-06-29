@@ -176,6 +176,9 @@ footer li ul {
   flex-direction: column;
   justify-content: space-around;
 }
+#bloc-5-cta h3 {
+  font-size: 3.4rem;
+}
 .bg-center,
 .bg-l-edge,
 .bg-r-edge,
