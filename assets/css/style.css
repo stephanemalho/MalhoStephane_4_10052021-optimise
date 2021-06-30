@@ -156,7 +156,6 @@ footer li ul {
 .bloc-lg {
   padding: 10px 5px;
 }
-
 #acceuil-none {
   display: none;
 }
@@ -168,43 +167,16 @@ footer li ul {
   background-size: cover;
   position: relative;
 }
-
 #bloc-5-cta {
   min-height: 300px;
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: #b33200;
 }
 #bloc-5-cta h3 {
   font-size: 3.4rem;
-}
-.bg-center,
-.bg-l-edge,
-.bg-r-edge,
-.bg-t-edge,
-.bg-b-edge,
-.bg-tl-edge,
-.bg-bl-edge,
-.bg-tr-edge,
-.bg-br-edge,
-.bg-repeat {
-  background-size: auto;
-}
-.bg-repeat {
-  background: repeat;
-}
-.bg-t-edge {
-  background: top no-repeat;
-}
-.bloc-bg-texture::before {
-  content: "";
-  background-size: 2px 2px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 .b-parallax {
   background-attachment: fixed;
@@ -256,9 +228,6 @@ footer li ul {
 .slash {
   border-right: 2px solid white;
 }
-.navbar-nav .open .dropdown-menu > li > a {
-  text-align: inherit;
-}
 .nav > li a:hover,
 .nav > li a:focus {
   background: transparent;
@@ -281,13 +250,13 @@ footer li ul {
   position: relative;
   z-index: 2;
 }
-.dropdown-menu .dropmenu-flow-right {
+/* .dropdown-menu .dropmenu-flow-right {
   top: 100%;
   left: 0;
   margin-left: -1px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-}
+} */
 .mg-md {
   margin-top: 10px;
   margin-bottom: 20px;
@@ -432,11 +401,6 @@ h4 {
 h5 {
   font-size: 2.2rem;
 }
-.med-width-whitespace {
-  max-width: 800px;
-  margin: auto;
-  box-shadow: 0px 0px 0px #000;
-}
 .icons {
   margin-bottom: 14px;
   margin-top: 24px;
@@ -447,15 +411,8 @@ h5 {
 .portfolio-thumb {
   margin-bottom: 24px;
 }
-.bold-link {
-  font-weight: 900;
-  text-decoration: underline;
-}
 .bgc-white {
   background-color: #ffffff;
-}
-.contact-link-color {
-  color: #fff;
 }
 .bgc-atomic-tangerine {
   background-color: #b33200;

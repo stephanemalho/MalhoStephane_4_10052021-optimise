@@ -1,6 +1,6 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^https//stephanemalho.github.io/MalhoStephane_4_10052021-optimise\.com [NC]
-RewriteRule ^(.*)$ https://www.stephanemalho.github.io/MalhoStephane_4_10052021-optimise//$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^https://la-chouette-agence.stephane-malho\.fr [NC]
+RewriteRule ^(.*)$ https://www.la-chouette-agence.stephane-malho//$1 [L,R=301]
 
 Header set X-Content-Type-Options "nosniff"
 
