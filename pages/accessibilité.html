@@ -11,12 +11,12 @@
       type="image/png"
       href="../assets/img/logo-title-min.jpeg"
     />
-    <!-- <link rel="stylesheet" type="text/css" href="../assets/css/et-line.css" /> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
-    />
+    /> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
     <link rel="manifest" href="./manifest.json">
     <title>Accessibilité - La chouette agence</title>
@@ -28,9 +28,16 @@
       property="og:description"
       content="Guide d'accessibilitée 2021 pour naviger sur notre site"
     />
-    <!--                        Analytics                   -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script defer>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <!--                      Analytics END                 -->
+  gtag('config', 'GA_MEASUREMENT_ID');
+</script>
+    <!-- Global site tag (gtag.js) - Google - Analytics END       -->
   </head>
   <body>
     <!--                         HEADER                     -->
@@ -123,7 +130,7 @@
             Voici la listes des <em>accessKey</em> que vous pourrez utiliser:
           </p>
           <ul>
-            <li>0 = Accessibilité</li>
+            <li>o = Accessibilité (ici la lettre "o" est utilisée car le chiffre "0" peut entrée en conflit avec le systeme du navigateur sur Chrome)</li>
             <li>a = Acceuil</li>
             <li>w = Nos réalisations</li>
             <li>f = Formulaire de contact</li>

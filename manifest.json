@@ -1,11 +1,6 @@
 {
-    "short_name": "Chouette agence",
-    "name": "La chouette agence du web",
-    "icons": [
-        {
-        "src": "./assets/img/logo-title-min.jpeg",
-        "type": "image.png",
-    "sizes": "220x40"
-        }
-    ]
+    "manifest_version": 2,
+    "permissions": ["webNavigation"],
+
+    "version": "0.1"
 }
