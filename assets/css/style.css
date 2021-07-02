@@ -48,9 +48,9 @@ a:hover {
   color: orange;
   text-decoration: none;
 }
-.first-label {
+/* .first-label {
   width: 100vw;
-}
+} */
 header {
   position: fixed;
   z-index: 1000;
@@ -446,7 +446,7 @@ select {
 }
 select:focus {
   color: #b33200;
-  border: 2px solid #b33200;
+  border: 1px solid #55a0e6;
 }
 option {
   font-size: 1.5rem;
