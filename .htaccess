@@ -1,9 +1,10 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^https:www.la-chouette-agence.stephane-malho.fr/ [NC]
-RewriteRule ^(.*)$ https://la-chouette-agence.stephane-malho.fr//$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^https://stephanemalho.github.io/MalhoStephane_4_10052021-optimise/ [NC]
+RewriteRule ^(.*)$ https://stephanemalho.github.io/MalhoStephane_4_10052021-optimise//$1 [L,R=301]
 
 Content-Security-Policy: script-src 'self' https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js
-Content-Security-Policy: script-src 'self' https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css
+Content-Security-Policy: script-src 'self' https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+
 
 Header set X-Content-Type-Options "nosniff"
 
