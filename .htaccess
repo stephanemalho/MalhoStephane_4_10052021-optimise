@@ -1,10 +1,10 @@
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^https://stephanemalho.github.io/MalhoStephane_4_10052021-optimise/ [NC]
-RewriteRule ^(.*)$ https://stephanemalho.github.io/MalhoStephane_4_10052021-optimise//$1 [L,R=301]
+RewriteRule ^(.*)$ https://www.stephanemalho.github.io/MalhoStephane_4_10052021-optimise//$1 [L,R=301]
 
 Content-Security-Policy: script-src 'self' https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js
 Content-Security-Policy: script-src 'self' https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
-
+Content-Security-Policy: script-src 'self' https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID
 
 Header set X-Content-Type-Options "nosniff"
 
