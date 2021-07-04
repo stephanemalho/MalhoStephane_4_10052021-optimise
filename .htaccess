@@ -1,3 +1,11 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^stephanemalho.github.io/MalhoStephane_4_10052021-optimise\.com [NC]
-RewriteRule ^(.*)$ https://www.stephanemalho.github.io/MalhoStephane_4_10052021-optimise//$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^https://stephanemalho.github.io/MalhoStephane_4_10052021-optimise/ [NC]
+RewriteRule ^(.*)$ https://stephanemalho.github.io/MalhoStephane_4_10052021-optimise//$1 [L,R=301]
+
+Content-Security-Policy: script-src 'self' https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js
+Content-Security-Policy: script-src 'self' https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+
+
+Header set X-Content-Type-Options "nosniff"
+
+Header always set X-Frame-Options "SAMEORIGIN"

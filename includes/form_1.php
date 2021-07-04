@@ -9,7 +9,7 @@
 	$input_504 = $_POST['input_504'];
 	$message = $_POST['message'];
 	
-	$to = 'receiver@yoursite.com'; // Email submissions are sent to this email
+	$to = 'contact@la-chouette-agence-web-design.online'; // Email submissions are sent to this email
 
 	// Create email	
 	$email_subject = "Message from your website";

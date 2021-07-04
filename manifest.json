@@ -1,11 +1,9 @@
 {
-    "short_name": "Chouette agence",
-    "name": "La chouette agence du web",
-    "icons": [
-        {
-        "src": "./assets/img/logo-title-min.jpeg",
-        "type": "image.png",
-    "sizes": "220x40"
-        }
-    ]
+    "manifest_version": 2,
+    "permissions": ["webNavigation"],
+    "name": "La chouette agence",
+    "theme_color": "#b33200",
+    "background_color": "#fff",
+    "display": "browser",
+    "start_url": "https://stephanemalho.github.io/MalhoStephane_4_10052021-optimise/"
 }

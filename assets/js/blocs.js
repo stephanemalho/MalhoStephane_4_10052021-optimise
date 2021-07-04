@@ -8,23 +8,23 @@ function setUpSpecialNavs() {
             if (t.stopPropagation(), $(this).hasClass("selected-nav")) $(".blocsapp-special-menu blocsnav").removeClass("open"), $(".selected-nav").removeClass("selected-nav"), setTimeout(function() {
                 $(".blocsapp-special-menu").remove(), $("body").removeClass("lock-scroll"), $(".selected-nav").removeClass("selected-nav")
             }, 300);
-            // else {
-            //     $(this).addClass("selected-nav");
-            //     var o = e.attr("class").replace("navbar", "").replace("row", ""),
-            //         l = i.parent().attr("class").replace("navbar-collapse", "").replace("collapse", "");
-            //     ($(".content-tint").length = -1) && $("body").append('<div class="content-tint"></div>'), a.insertBefore(".page-container").wrap('<div class="blocsapp-special-menu ' + o + '"><blocsnav class="' + l + '">'), $("blocsnav").prepend('<a class="close-special-menu animated fadeIn" style="animation-delay:0.5s;"><div class="close-icon"></div></a>'),
-            //         function() {
-            //             var t = "fadeInRight",
-            //                 e = 0,
-            //                 i = 60;
-            //             $(".blocsapp-special-menu blocsnav").hasClass("fullscreen-nav") ? (t = "fadeIn", i = 100) : $(".blocsapp-special-menu").hasClass("nav-invert") && (t = "fadeInLeft");
-            //             $(".blocsapp-special-menu blocsnav li").each(function() {
-            //                 $(this).parent().hasClass("dropdown-menu") ? $(this).addClass("animated fadeIn") : (e += i, $(this).attr("style", "animation-delay:" + e + "ms").addClass("animated " + t))
-            //             })
-            //         }(), setTimeout(function() {
-            //             $(".blocsapp-special-menu blocsnav").addClass("open"), $(".content-tint").addClass("on"), $("body").addClass("lock-scroll")
-            //         }, 10)
-            // }
+            else {
+                $(this).addClass("selected-nav");
+                var o = e.attr("class").replace("navbar", "").replace("row", ""),
+                    l = i.parent().attr("class").replace("navbar-collapse", "").replace("collapse", "");
+                ($(".content-tint").length = -1) && $("body").append('<div class="content-tint"></div>'), a.insertBefore(".page-container").wrap('<div class="blocsapp-special-menu ' + o + '"><blocsnav class="' + l + '">'), $("blocsnav").prepend('<a class="close-special-menu animated fadeIn" style="animation-delay:0.5s;"><div class="close-icon"></div></a>'),
+                    function() {
+                        var t = "fadeInRight",
+                            e = 0,
+                            i = 60;
+                        $(".blocsapp-special-menu blocsnav").hasClass("fullscreen-nav") ? (t = "fadeIn", i = 100) : $(".blocsapp-special-menu").hasClass("nav-invert") && (t = "fadeInLeft");
+                        $(".blocsapp-special-menu blocsnav li").each(function() {
+                            $(this).parent().hasClass("dropdown-menu") ? $(this).addClass("animated fadeIn") : (e += i, $(this).attr("style", "animation-delay:" + e + "ms").addClass("animated " + t))
+                        })
+                    }(), setTimeout(function() {
+                        $(".blocsapp-special-menu blocsnav").addClass("open"), $(".content-tint").addClass("on"), $("body").addClass("lock-scroll")
+                    }, 10)
+            }
     }), $("body").on("mousedown touchstart", ".content-tint, .close-special-menu", function(t) {
         $(".content-tint").removeClass("on"), $(".selected-nav").click(), setTimeout(function() {
             $(".content-tint").remove()

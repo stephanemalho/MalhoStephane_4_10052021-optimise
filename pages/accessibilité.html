@@ -6,19 +6,21 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
+    <meta name="theme-color" content="#b33200"/>
     <link
       rel="shortcut icon"
       type="image/png"
       href="../assets/img/logo-title-min.jpeg"
     />
-    <!-- <link rel="stylesheet" type="text/css" href="../assets/css/et-line.css" /> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
-    <link rel="manifest" href="./manifest.json">
+    <link rel="manifest" href="./manifest.json" />
     <title>Accessibilité - La chouette agence</title>
     <meta
       name="description"
@@ -28,9 +30,21 @@
       property="og:description"
       content="Guide d'accessibilitée 2021 pour naviger sur notre site"
     />
-    <!--                        Analytics                   -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    <!--                      Analytics END                 -->
+      gtag("config", "GA_MEASUREMENT_ID");
+    </script>
+    <!-- Global site tag (gtag.js) - Google - Analytics END       -->
   </head>
   <body>
     <!--                         HEADER                     -->
@@ -85,7 +99,7 @@
         <h2>Pourquoi créer une page accessibilité ?</h2>
         <p>
           La chouette agence a développé son site dans le but d'accorder une
-          expérience utilisateur optimale. Proposer une page d'accessibilitée
+          expérience utilisateur optimale. Proposer une page d'accessibilité
           permet d'améliorer le parcours de navigation d'un utilisateur ayant
           recours à une aide sensoriel.
         </p>
@@ -123,7 +137,11 @@
             Voici la listes des <em>accessKey</em> que vous pourrez utiliser:
           </p>
           <ul>
-            <li>0 = Accessibilité</li>
+            <li>
+              o = Accessibilité (ici la lettre "o" est utilisée car le chiffre
+              "0" peut entrée en conflit avec le systeme du navigateur sur
+              Chrome)
+            </li>
             <li>a = Acceuil</li>
             <li>w = Nos réalisations</li>
             <li>f = Formulaire de contact</li>
@@ -223,9 +241,9 @@
           <em
             >Selon MDN, il est possible qu'un raccourci défini avec l'accesskey
             puisse entrer en conflit avec un raccouci d'assistance ou un
-            raccourci du système du navigateur. Une conbinaison
-            accesskey qui fonctionne dans un cas peut ne pas fonctionner dans un
-            autre cas.</em
+            raccourci du système du navigateur. Une conbinaison accesskey qui
+            fonctionne dans un cas peut ne pas fonctionner dans un autre
+            cas.</em
           >
         </article>
         <article>
@@ -303,16 +321,21 @@
       integrity="sha256-8oQ1OnzE2X9v4gpRVRMb1DWHoPHJilbur1LP9ykQ9H0="
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.5/dist/js/bootstrap.min.js"></script>
-    <script src="../assets/js/blocs.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="./assets/js/blocs.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"
       integrity="sha512-BNs09vwMdfabwyH36BehO8DJbV5S6RaO0vXqPqiMhYC8mZ4WsfwwPEVhMOl5D7gyrTSDDv98f3HgaOUDlFhywg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="../assets/js/gmaps.js"></script>
-    <script src="../assets/js/jqBootstrapValidation.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.min.js"
+      integrity="sha512-gauu0VKZq9ry8hOZHgNpcB2ogbSDojs+XLDItpOLY0IyA+KigeuT/suwSdPgfU/TGYLAn4Nan4OeaCa/UPr70Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../assets/js/blocs.js"></script>
     <script src="https://use.fontawesome.com/93a6cc91fc.js"></script>
     <!--                                   SCRIPT END                  -->
   </body>
