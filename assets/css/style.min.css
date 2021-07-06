@@ -48,9 +48,6 @@ a:hover {
   color: orange;
   text-decoration: none;
 }
-/* .first-label {
-  width: 100vw;
-} */
 header {
   position: fixed;
   z-index: 1000;
@@ -250,13 +247,6 @@ footer li ul {
   position: relative;
   z-index: 2;
 }
-/* .dropdown-menu .dropmenu-flow-right {
-  top: 100%;
-  left: 0;
-  margin-left: -1px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-} */
 .mg-md {
   margin-top: 10px;
   margin-bottom: 20px;
@@ -520,6 +510,9 @@ kbd {
   main {
     padding-top: 0;
   }
+#nav-toggle {
+  visibility: hidden;
+}
   .navbar-nav > li > a {
     color: #000;
   }
