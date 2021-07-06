@@ -510,9 +510,6 @@ kbd {
   main {
     padding-top: 0;
   }
-#nav-toggle {
-  visibility: hidden;
-}
   .navbar-nav > li > a {
     color: #000;
   }
