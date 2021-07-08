@@ -19,8 +19,7 @@
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
-    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.min.css" />
     <title>Accessibilité - La chouette agence</title>
     <meta
       name="description"
@@ -31,19 +30,14 @@
       content="Guide d'accessibilitée 2021 pour naviger sur notre site"
     />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        window.dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJT64HE2NR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-      gtag("config", "GA_MEASUREMENT_ID");
-    </script>
+  gtag('config', 'G-QJT64HE2NR');
+</script>
     <!-- Global site tag (gtag.js) - Google - Analytics END       -->
   </head>
   <body>
@@ -57,9 +51,7 @@
               alt="logo principal de la chouette agence représentant un hibou"
               height="40"
           /></a>
-          <button
-            id="nav-toggle"
-            type="button"
+          <a
             class="ui-navbar-toggle navbar-toggle"
             data-toggle="collapse"
             data-target=".navbar-1"
@@ -67,7 +59,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
+        </a>
         </div>
         <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
           <ul class="site-navigation nav navbar-nav">
@@ -118,7 +110,7 @@
             d'accessibilitée des contenus web du W3C.
           </p>
           <p>
-            Tout nos titres sont balisées et structurées dans l'ordre et le
+            Tout nos titres sont balisés et structurés dans l'ordre et le
             respect des règles actuelles de la sémantique HTML5
           </p>
           <h3>Naviguer sur ce site</h3>
@@ -157,7 +149,7 @@
           <table>
             <thead>
               <tr>
-                <th></th>
+                <th aria-hidden="true"></th>
                 <th>Windows</th>
                 <th>Linux</th>
                 <th>Mac</th>
@@ -308,6 +300,7 @@
     <!--                             Footer - bloc-8 END              -->
     <!--                             SCROLLTOTOP BUTTON               -->
     <a
+      href="#"
       class="bloc-button btn btn-d scrollToTop showScrollTop"
       onclick="scrollToTarget('1')"
       title="Retour en haut de page"
@@ -322,7 +315,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="./assets/js/blocs.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"
       integrity="sha512-BNs09vwMdfabwyH36BehO8DJbV5S6RaO0vXqPqiMhYC8mZ4WsfwwPEVhMOl5D7gyrTSDDv98f3HgaOUDlFhywg=="
@@ -335,7 +327,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="../assets/js/blocs.js"></script>
+    <script src="../assets/js/blocs.min.js"></script>
     <script src="https://use.fontawesome.com/93a6cc91fc.js"></script>
     <!--                                   SCRIPT END                  -->
   </body>

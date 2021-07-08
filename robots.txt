@@ -1,9 +1,9 @@
 # Group 1
 User-agent: Googlebot
-Disallow: /https://stephanemalho.github.io/MalhoStephane_4_10052021-optimise/contact.html//
+Disallow: /https://la-chouette-agence.stephane-malho.fr/contact.html//
 
 # Group 2
 User-agent: *
 Allow: /
 
-Sitemap: https://stephanemalho.github.io/MalhoStephane_4_10052021-optimise//sitemap.txt
+Sitemap: https://la-chouette-agence.stephane-malho.fr//sitemap.txt
