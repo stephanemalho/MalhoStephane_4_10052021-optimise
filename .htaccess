@@ -1,28 +1,76 @@
+
 RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
 RewriteCond %{http_host} ^la-chouette-agence.stephane-malho.fr/ [nc]
 RewriteRule ^(.*)$ https://www.la-chouette-agence.stephane-malho.fr/$1 [r=301,nc]
 
+AddDefaultCharset UTF-8
+
+#indique aux serveurs proxy situés entre le navigateur de l'internaute et votre serveur de stocker deux versions des pages : une version générée normalement et une version compressée. 
+<IfModule mod_headers.c>
+  <FilesMatch ".(js|css|xml|gz|html)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch ".(php)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch ".(jpeg|png)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
+
 ## contrôle du cache navigateur - Expire headers
 <IfModule mod_expires.c>
 	ExpiresActive On
 	ExpiresDefault "access plus 7200 seconds"
-	ExpiresByType ../assets/css/et-line.css                             "access plus 1 year"
-	ExpiresByType ../assets/css/style.css                               "access plus 1 year"
-	ExpiresByType ../assets/js/blocs.js 			                    "access plus 1 year"
-	ExpiresByType ../assets/js/gmaps.js 		                        "access plus 1 year"
-	ExpiresByType ../assets/js/jqBootstrapValidation.js        	        "access plus 1 year"
-	ExpiresByType ../assets/img/main-logo-min-adobespark.png	        "access plus 1 year"
-	ExpiresByType ../assets/img/circle-logo-min.png         	        "access plus 1 year"
-    ExpiresByType ../assets/img/desk-work-min-adobespark.jpeg	        "access plus 1 year"
-	ExpiresByType ../assets/img/design-worker-min-adobespark.jpeg	    "access plus 1 year"
-	ExpiresByType ../assets/img/livres-journal-min-adobespark.jpeg	    "access plus 1 year"
-	ExpiresByType ../assets/img/femme-photographe-min-adobespark.jpeg	"access plus 1 year"
-	ExpiresByType ../assets/img/materiel-tech-adobespark.jpeg       	"access plus 1 year"
-	ExpiresByType ../assets/img/creatif-desk-adobespark.jpg	            "access plus 1 year"
-	ExpiresByType ../assets/img/logo-title-min.jpeg	                    "access plus 1 year"
+	ExpiresByType text/css "access plus 1 year"
+	ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+	ExpiresByType text/javascript "access plus 1 month"
+</IfModule> 
+
+# Compression pour fichiers CSS
+<IfModule mod_gzip.c>
+    mod_gzip_on       Yes
+    mod_gzip_dechunk  Yes
+    mod_gzip_minimum_file_size 1024
+    mod_gzip_maximum_file_size 100000
+    mod_gzip_item_include file \.css$
+    mod_gzip_item_include mime ^text/css$
 </IfModule>
+
+# Compression pour fichiers JS
+<IfModule mod_gzip.c>
+    mod_gzip_on       Yes
+    mod_gzip_dechunk  Yes
+    mod_gzip_minimum_file_size 512
+    mod_gzip_maximum_file_size 1000000
+    mod_gzip_item_include file \.js$
+    mod_gzip_item_include mime ^application/x-javascript.*
+</IfModule>
+
+Header set Content-Security-Policy "default-src 'self' *.cloudflare.com *.bootstrapcdn.com *.jsdelivr.net *.cloudflare.com *.jquery.com *.googletagmanager.com *.fontawesome.com; font-src 'self' * *.fontawesome.com *.bootstrapcdn.com *.jquery.com; base-uri 'self';"
+
+# Cache
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresByType application/x-javascript "access plus 2 month"
+    ExpiresByType application/javascript "access plus 2 month"
+    ExpiresByType text/javascript "access plus 2 month"
+</IfModule>
+
+# Protéger les fichiers .htaccess et .htpasswds
+<Files ~ "^.*.([Hh][Tt][AaPp])">
+order allow,deny
+deny from all
+satisfy all
+</Files>
 
 Header set X-Content-Type-Options "nosniff"
 Header always set X-Frame-Options "SAMEORIGIN"
