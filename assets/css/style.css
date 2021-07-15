@@ -191,7 +191,7 @@ footer li ul {
 #bloc-1-hero {
   height: 400px;
 }
-#bloc-1-hero h1 {
+h1 {
   font-size: 4rem;
   z-index: 800;
 }
