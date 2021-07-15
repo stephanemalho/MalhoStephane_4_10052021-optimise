@@ -55,7 +55,7 @@ AddDefaultCharset UTF-8
     mod_gzip_item_include mime ^application/x-javascript.*
 </IfModule>
 
-Header set Content-Security-Policy "default-src 'self' *.cloudflare.com *.bootstrapcdn.com *.jsdelivr.net *.cloudflare.com *.jquery.com *.googletagmanager.com *.fontawesome.com; font-src 'self' * *.fontawesome.com *.bootstrapcdn.com *.jquery.com; base-uri 'self';"
+Header set Content-Security-Policy "default-src 'self' script-src 'unsafe inline'  *.cloudflare.com *.bootstrapcdn.com *.jsdelivr.net *.cloudflare.com *.jquery.com *.googletagmanager.com *.fontawesome.com; font-src 'self' * *.fontawesome.com *.bootstrapcdn.com *.jquery.com; base-uri 'self';"
 
 # Cache
 <IfModule mod_expires.c>
