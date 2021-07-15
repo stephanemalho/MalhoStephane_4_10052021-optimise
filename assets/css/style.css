@@ -102,7 +102,7 @@ figure {
   padding: 20px 0;
 }
 #bloc-8 {
-  height: auto;
+  height: 110px;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -139,7 +139,7 @@ footer {
   padding: 20px;
 }
 footer h2,h4 {
-    font-size:1.6em;
+  font-size:1.6em;
 }
 footer li ul {
   display: flex;
