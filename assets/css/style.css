@@ -102,7 +102,7 @@ figure {
   padding: 20px 0;
 }
 #bloc-8 {
-  height: 110px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -136,13 +136,10 @@ blockquote p {
   margin-right: 15px;
 }
 footer {
-  padding: 20px 0;
+  padding: 20px;
 }
-.form-footer {
-  height: 150px;
-  display: flex;
-  flex-direction: row;
-  align-items: end;
+footer h2,h4 {
+    font-size:1.6em;
 }
 footer li ul {
   display: flex;
