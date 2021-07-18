@@ -40,9 +40,6 @@ button {
   outline: none;
   text-decoration: none;
 }
-.light-bg {
-  text-shadow: 0 2px rgba(0, 0, 0);
-}
 a:hover {
   cursor: pointer;
   color: orange;
@@ -185,12 +182,12 @@ footer li ul {
 .d-bloc .navbar-toggle .icon-bar {
   background: rgba(255, 255, 255);
 }
-#bloc-1-hero {
-  height: 400px;
-}
 h1 {
   font-size: 4rem;
   z-index: 800;
+}
+#bloc-1-hero {
+  height: 400px;
 }
 #bloc-1-hero img {
   width: 100px;
@@ -398,9 +395,6 @@ h5 {
 .portfolio-thumb {
   margin-bottom: 24px;
 }
-.bgc-white {
-  background-color: #ffffff;
-}
 .bgc-atomic-tangerine {
   background-color: #b33200;
 }
@@ -476,7 +470,7 @@ kbd {
   .bg-banniere {
     background-position-y: 60px;
   }
-}
+} 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .bloc-lg {
     padding: 50px 25px;
