@@ -7,6 +7,9 @@ body {
   background: #fff;
   overflow-x: hidden;
 }
+*:focus {
+  border: 2px solid #55a0e6;
+}
 img {
   object-fit: cover;
 }
@@ -183,7 +186,7 @@ footer li ul {
   background: rgba(255, 255, 255);
 }
 h1 {
-  font-size: 4rem;
+  font-size: 4em;
   z-index: 800;
 }
 #bloc-1-hero {
@@ -412,6 +415,7 @@ h5 {
 }
 .bg-banniere {
   background-image: url("../img/desk-work-min-bg-scrall-adobespark.jpeg");
+  background-color: #b33200;
 }
 .bg-presentation {
   background-image: url("../img/design-worker-min-smartphone-adobespark.jpeg");
